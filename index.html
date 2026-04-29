@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atelier Mariana Reis · Nail Designer Boutique</title>
+  <meta name="description" content="Atelier boutique de nail design em São Paulo. Manicure, pedicure spa, esmaltação em gel, alongamento e nail art autoral por Mariana Reis." />
+  <meta name="author" content="Atelier Mariana Reis" />
+
+  <meta property="og:title" content="Atelier Mariana Reis · Nail Designer Boutique" />
+  <meta property="og:description" content="Cuidado, sofisticação e nail art autoral em um atelier intimista." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1200&q=80" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --lilac: #EBD6FB;
+      --rose: #FDF4F5;
+      --indigo: #687FE5;
+      --indigo-deep: #4d63c4;
+      --ink: #2b2740;
+      --muted: #6b6580;
+      --line: rgba(104, 127, 229, 0.15);
+      --shadow-sm: 0 4px 14px rgba(104, 127, 229, 0.08);
+      --shadow-md: 0 18px 40px -20px rgba(104, 127, 229, 0.35);
+      --radius: 22px;
+      --serif: "Cormorant Garamond", Georgia, serif;
+      --sans: "Inter", system-ui, -apple-system, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      color: var(--ink);
+      background: var(--rose);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+    .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 96px 0; }
+    .eyebrow {
+      font-family: var(--sans);
+      font-size: 12px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--indigo);
+      font-weight: 500;
+      margin-bottom: 18px;
+      display: inline-block;
+    }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 500; color: var(--ink); letter-spacing: -0.01em; }
+    h2 { font-size: clamp(34px, 4.4vw, 52px); line-height: 1.1; margin-bottom: 18px; }
+    h3 { font-size: 22px; }
+    .lead { font-size: 17px; color: var(--muted); max-width: 560px; }
+    .section-head { text-align: center; margin: 0 auto 60px; max-width: 640px; }
+    .section-head .lead { margin: 0 auto; }
+
+    /* Header */
+    header.site {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(253, 244, 245, 0.85);
+      backdrop-filter: saturate(160%) blur(14px);
+      -webkit-backdrop-filter: saturate(160%) blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+    .brand {
+      font-family: var(--serif); font-size: 24px; font-weight: 600;
+      letter-spacing: -0.01em; display: flex; align-items: center; gap: 10px;
+    }
+    .brand-mark {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--indigo), var(--lilac));
+      display: inline-block;
+    }
+    .nav-links { display: flex; gap: 30px; align-items: center; }
+    .nav-links a {
+      font-size: 14px; color: var(--muted); transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--indigo); }
+    .nav-cta {
+      background: var(--ink); color: var(--rose);
+      padding: 10px 20px; border-radius: 999px;
+      font-size: 13px; font-weight: 500; letter-spacing: 0.02em;
+      transition: transform .2s, background .2s;
+    }
+    .nav-cta:hover { background: var(--indigo); transform: translateY(-1px); }
+    .menu-toggle { display: none; }
+
+    /* Hero */
+    .hero { padding: 80px 0 100px; }
+    .hero-grid {
+      display: grid; grid-template-columns: 1.1fr 1fr; gap: 70px; align-items: center;
+    }
+    .hero h1 {
+      font-size: clamp(46px, 6.5vw, 78px);
+      line-height: 1.02; margin-bottom: 24px;
+    }
+    .hero h1 em { font-style: italic; color: var(--indigo); }
+    .hero p { font-size: 18px; color: var(--muted); max-width: 480px; margin-bottom: 36px; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 15px 26px; border-radius: 999px;
+      font-size: 14px; font-weight: 500; letter-spacing: 0.02em;
+      transition: transform .2s, box-shadow .2s, background .2s;
+    }
+    .btn-primary { background: var(--indigo); color: #fff; box-shadow: var(--shadow-md); }
+    .btn-primary:hover { background: var(--indigo-deep); transform: translateY(-2px); }
+    .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+    .btn-ghost:hover { background: var(--lilac); border-color: transparent; }
+    .btn svg { width: 18px; height: 18px; }
+
+    .hero-visual { position: relative; }
+    .hero-img {
+      aspect-ratio: 4/5; border-radius: 200px 200px 24px 24px;
+      overflow: hidden; box-shadow: var(--shadow-md);
+    }
+    .hero-img img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-badge {
+      position: absolute; bottom: 30px; left: -30px;
+      background: #fff; border-radius: 18px; padding: 18px 22px;
+      box-shadow: var(--shadow-md);
+      display: flex; align-items: center; gap: 14px;
+    }
+    .hero-badge .num { font-family: var(--serif); font-size: 32px; color: var(--indigo); line-height: 1; }
+    .hero-badge .lbl { font-size: 12px; color: var(--muted); line-height: 1.3; max-width: 110px; }
+    .hero-blob {
+      position: absolute; top: -20px; right: -30px;
+      width: 160px; height: 160px; border-radius: 50%;
+      background: var(--lilac); z-index: -1; filter: blur(8px); opacity: .9;
+    }
+
+    /* Sobre */
+    .about { background: #fff; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 70px; align-items: center; }
+    .about-img { aspect-ratio: 1/1; border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-sm); }
+    .about-img img { width: 100%; height: 100%; object-fit: cover; }
+    .about p { color: var(--muted); margin-bottom: 16px; font-size: 16px; }
+    .about-stats { display: flex; gap: 40px; margin-top: 32px; padding-top: 32px; border-top: 1px solid var(--line); }
+    .about-stats div .n { font-family: var(--serif); font-size: 36px; color: var(--indigo); line-height: 1; }
+    .about-stats div .l { font-size: 12px; color: var(--muted); letter-spacing: 0.15em; text-transform: uppercase; margin-top: 6px; }
+
+    /* Serviços */
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .service {
+      background: #fff; border-radius: var(--radius); padding: 32px;
+      transition: transform .3s, box-shadow .3s;
+      border: 1px solid transparent;
+    }
+    .service:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--lilac); }
+    .service-icon {
+      width: 48px; height: 48px; border-radius: 14px;
+      background: var(--lilac); display: flex; align-items: center; justify-content: center;
+      margin-bottom: 22px; color: var(--indigo);
+    }
+    .service-icon svg { width: 24px; height: 24px; }
+    .service h3 { margin-bottom: 8px; }
+    .service-desc { font-size: 14px; color: var(--muted); margin-bottom: 22px; min-height: 44px; }
+    .service-foot {
+      display: flex; justify-content: space-between; align-items: baseline;
+      padding-top: 18px; border-top: 1px dashed var(--line);
+    }
+    .service-price { font-family: var(--serif); font-size: 26px; color: var(--indigo); }
+    .service-time { font-size: 12px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; }
+
+    /* Galeria */
+    .gallery { background: linear-gradient(180deg, var(--rose), #fff); }
+    .gallery-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 220px; gap: 16px;
+    }
+    .gallery-item {
+      overflow: hidden; border-radius: 18px; position: relative;
+      box-shadow: var(--shadow-sm);
+    }
+    .gallery-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .6s ease;
+    }
+    .gallery-item:hover img { transform: scale(1.06); }
+    .gallery-item.tall { grid-row: span 2; }
+    .gallery-item.wide { grid-column: span 2; }
+
+    /* Depoimentos */
+    .testi { background: var(--lilac); }
+    .testi .section-head .eyebrow { color: var(--indigo-deep); }
+    .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .testi-card {
+      background: #fff; border-radius: var(--radius); padding: 32px;
+      display: flex; flex-direction: column; gap: 18px;
+    }
+    .stars { display: flex; gap: 3px; color: var(--indigo); }
+    .stars svg { width: 16px; height: 16px; }
+    .testi-quote { font-family: var(--serif); font-size: 19px; line-height: 1.45; font-style: italic; color: var(--ink); }
+    .testi-author { display: flex; align-items: center; gap: 12px; margin-top: auto; padding-top: 18px; border-top: 1px solid var(--line); }
+    .avatar { width: 44px; height: 44px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
+    .avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .testi-author .name { font-weight: 500; font-size: 14px; }
+    .testi-author .meta { font-size: 12px; color: var(--muted); }
+
+    /* FAQ */
+    .faq-wrap { max-width: 760px; margin: 0 auto; }
+    details.faq-item {
+      background: #fff; border-radius: 16px; padding: 0;
+      margin-bottom: 12px; border: 1px solid var(--line);
+      overflow: hidden;
+    }
+    details.faq-item summary {
+      list-style: none; cursor: pointer;
+      padding: 22px 28px;
+      display: flex; justify-content: space-between; align-items: center;
+      font-weight: 500; font-size: 16px;
+    }
+    details.faq-item summary::-webkit-details-marker { display: none; }
+    details.faq-item summary::after {
+      content: "+"; font-size: 24px; color: var(--indigo); font-weight: 300;
+      transition: transform .3s;
+    }
+    details.faq-item[open] summary::after { content: "−"; }
+    details.faq-item .faq-body {
+      padding: 0 28px 24px; color: var(--muted); font-size: 15px;
+    }
+
+    /* Localização */
+    .loc { background: #fff; }
+    .loc-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 50px; align-items: stretch; }
+    .loc-info ul { list-style: none; margin-top: 26px; }
+    .loc-info li { padding: 16px 0; border-bottom: 1px dashed var(--line); display: flex; justify-content: space-between; font-size: 15px; }
+    .loc-info li span:first-child { color: var(--muted); }
+    .loc-info li span:last-child { font-weight: 500; }
+    .loc-info .addr { display: flex; gap: 14px; align-items: flex-start; padding: 18px; border-radius: 16px; background: var(--rose); margin-top: 24px; }
+    .loc-info .addr svg { width: 22px; height: 22px; color: var(--indigo); flex-shrink: 0; margin-top: 2px; }
+    .loc-map { border-radius: var(--radius); overflow: hidden; min-height: 380px; box-shadow: var(--shadow-sm); }
+    .loc-map iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+    /* CTA Final */
+    .final-cta {
+      background: var(--ink); color: var(--rose);
+      text-align: center;
+    }
+    .final-cta h2 { color: var(--rose); }
+    .final-cta h2 em { font-style: italic; color: var(--lilac); }
+    .final-cta p { color: rgba(253, 244, 245, 0.7); max-width: 480px; margin: 0 auto 32px; }
+    .final-cta .btn-primary { background: var(--lilac); color: var(--ink); }
+    .final-cta .btn-primary:hover { background: #fff; }
+
+    /* Footer */
+    footer.site {
+      background: var(--ink); color: rgba(253, 244, 245, 0.55);
+      padding: 40px 0; font-size: 13px;
+      border-top: 1px solid rgba(253, 244, 245, 0.08);
+    }
+    footer .row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    footer .socials { display: flex; gap: 14px; }
+    footer .socials a {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: rgba(235, 214, 251, 0.1);
+      display: flex; align-items: center; justify-content: center;
+      transition: background .2s, color .2s;
+    }
+    footer .socials a:hover { background: var(--lilac); color: var(--ink); }
+    footer .socials svg { width: 16px; height: 16px; }
+
+    /* WhatsApp flutuante */
+    .wa-float {
+      position: fixed; bottom: 24px; right: 24px; z-index: 60;
+      width: 58px; height: 58px; border-radius: 50%;
+      background: #25D366; color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.4);
+      transition: transform .2s;
+    }
+    .wa-float:hover { transform: scale(1.08); }
+    .wa-float svg { width: 28px; height: 28px; }
+
+    /* Responsivo */
+    @media (max-width: 900px) {
+      section { padding: 70px 0; }
+      .hero { padding: 50px 0 70px; }
+      .hero-grid, .about-grid, .loc-grid { grid-template-columns: 1fr; gap: 50px; }
+      .hero-visual { order: -1; max-width: 380px; margin: 0 auto; }
+      .hero-badge { left: 10px; bottom: 10px; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .testi-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; }
+      .gallery-item.wide { grid-column: span 2; }
+      .gallery-item.tall { grid-row: span 1; }
+
+      .menu-toggle {
+        display: flex; flex-direction: column; gap: 5px;
+        padding: 8px; background: none;
+      }
+      .menu-toggle span { width: 22px; height: 1.5px; background: var(--ink); transition: .3s; }
+      .nav-links {
+        position: absolute; top: 100%; left: 0; right: 0;
+        flex-direction: column; gap: 0; padding: 12px 24px 24px;
+        background: var(--rose); border-bottom: 1px solid var(--line);
+        display: none;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a, .nav-links .nav-cta { padding: 12px 0; width: 100%; text-align: left; }
+      .nav-cta { border-radius: 12px; text-align: center !important; }
+    }
+    @media (max-width: 560px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .about-stats { gap: 24px; flex-wrap: wrap; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item.wide { grid-column: span 1; }
+      footer .row { justify-content: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site">
+  <div class="container nav">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      Mariana Reis
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu" onclick="document.getElementById('navlinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navlinks">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://wa.me/5511999990000?text=Ol%C3%A1%20Mariana%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="nav-cta">Agendar</a>
+    </nav>
+  </div>
+</header>
+
+<a id="top"></a>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Atelier Boutique de Nail Design</span>
+      <h1>Unhas que contam <em>histórias</em> de cuidado e estilo.</h1>
+      <p>Um espaço intimista no coração de Pinheiros onde técnica, higiene impecável e arte se encontram para realçar a sua melhor versão.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://wa.me/5511999990000?text=Ol%C3%A1%20Mariana%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Agendar pelo WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="https://instagram.com/atelier.marianareis" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Ver no Instagram
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-blob" aria-hidden="true"></div>
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=900&q=80" alt="Mãos com nail art delicada em tons rosé e lavanda" />
+      </div>
+      <div class="hero-badge">
+        <span class="num">8<small style="font-size:18px">+</small></span>
+        <span class="lbl">anos cuidando das suas mãos com carinho</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="about" id="sobre">
+  <div class="container about-grid">
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=800&q=80" alt="Retrato de Mariana Reis, nail designer" />
+    </div>
+    <div>
+      <span class="eyebrow">Sobre o atelier</span>
+      <h2>Olá, eu sou a <em style="font-style: italic; color: var(--indigo);">Mariana</em>.</h2>
+      <p>Há oito anos transformo o ritual de cuidar das unhas em um momento de pausa, beleza e autoestima. Formada pela Academia Nail Pro e especialista em alongamento em fibra de vidro, atendo um número limitado de clientes por dia para entregar uma experiência verdadeiramente boutique.</p>
+      <p>Trabalho apenas com produtos veganos e cruelty-free, em um ambiente impecavelmente higienizado, com café fresco e uma trilha sonora pensada para você relaxar.</p>
+      <div class="about-stats">
+        <div><div class="n">+1.2k</div><div class="l">Clientes atendidas</div></div>
+        <div><div class="n">8</div><div class="l">Anos de carreira</div></div>
+        <div><div class="n">4.9★</div><div class="l">Avaliação média</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Serviços e investimento</span>
+      <h2>Cuidado sob medida para cada estilo</h2>
+      <p class="lead">Da clássica francesinha à nail art autoral. Todos os serviços incluem hidratação, esmaltação base e acabamento espelhado.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2c-3 4-3 9 0 14 3-5 3-10 0-14z"/><path d="M12 16v6"/></svg></div>
+        <h3>Manicure clássica</h3>
+        <p class="service-desc">Cutilagem delicada, lixamento e esmaltação tradicional com cores premium.</p>
+        <div class="service-foot"><span class="service-price">R$ 75</span><span class="service-time">50 min</span></div>
+      </article>
+      <article class="service">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12c4-3 14-3 18 0"/><path d="M5 17c3-2 11-2 14 0"/><path d="M7 7c2-1 8-1 10 0"/></svg></div>
+        <h3>Pedicure spa</h3>
+        <p class="service-desc">Escalda-pés aromático, esfoliação com sais minerais e massagem relaxante.</p>
+        <div class="service-foot"><span class="service-price">R$ 110</span><span class="service-time">1h 10min</span></div>
+      </article>
+      <article class="service">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></div>
+        <h3>Esmaltação em gel</h3>
+        <p class="service-desc">Brilho de espelho que dura até 21 dias, com cores curadas a cada estação.</p>
+        <div class="service-foot"><span class="service-price">R$ 130</span><span class="service-time">1h 15min</span></div>
+      </article>
+      <article class="service">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 21V8c0-2 3-5 7-5s7 3 7 5v13"/><path d="M9 13h6"/></svg></div>
+        <h3>Alongamento em fibra</h3>
+        <p class="service-desc">Estrutura natural, leve e resistente em fibra de vidro, modelada com precisão.</p>
+        <div class="service-foot"><span class="service-price">R$ 220</span><span class="service-time">2h 30min</span></div>
+      </article>
+      <article class="service">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.5 6.5L21 10l-5 4.5L17.5 22 12 18l-5.5 4L8 14.5 3 10l6.5-1.5L12 2z"/></svg></div>
+        <h3>Nail art autoral</h3>
+        <p class="service-desc">Desenhos exclusivos pintados à mão, do minimalista ao statement total.</p>
+        <div class="service-foot"><span class="service-price">R$ 60+</span><span class="service-time">a partir</span></div>
+      </article>
+      <article class="service">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 12a8 8 0 1 1-16 0 8 8 0 0 1 16 0z"/><path d="M8 12l3 3 5-6"/></svg></div>
+        <h3>Combo mãos + pés</h3>
+        <p class="service-desc">Manicure clássica e pedicure spa em sequência. O ritual completo de bem-estar.</p>
+        <div class="service-foot"><span class="service-price">R$ 165</span><span class="service-time">2h</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="gallery" id="galeria">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Portfólio</span>
+      <h2>Trabalhos recentes</h2>
+      <p class="lead">Uma seleção das criações mais amadas pelas clientes do atelier.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item tall"><img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?w=600&q=80" alt="Nail art em tom nude com detalhes dourados" loading="lazy"/></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=500&q=80" alt="Esmaltação em gel rosé minimalista" loading="lazy"/></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1604654894611-6973b376cbde?w=500&q=80" alt="Unhas amêndoa com francesinha colorida" loading="lazy"/></div>
+      <div class="gallery-item wide"><img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=900&q=80" alt="Nail art floral em fundo lilás" loading="lazy"/></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=500&q=80" alt="Manicure francesa clássica" loading="lazy"/></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1599948128020-9a44505b58fe?w=500&q=80" alt="Unhas com efeito espelhado prateado" loading="lazy"/></div>
+      <div class="gallery-item tall"><img src="https://images.unsplash.com/photo-1632344004142-9719a637ad22?w=600&q=80" alt="Nail art com detalhes geométricos" loading="lazy"/></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?w=500&q=80" alt="Mãos cuidadas em tom rosa pálido" loading="lazy"/></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1632345031591-fa2c0eda61a8?w=500&q=80" alt="Esmaltação em tom borgonha sofisticado" loading="lazy"/></div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="testi" id="depoimentos">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">O que dizem as clientes</span>
+      <h2>Cuidado que se sente</h2>
+    </div>
+    <div class="testi-grid">
+      <article class="testi-card">
+        <div class="stars" aria-label="5 estrelas">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+        </div>
+        <p class="testi-quote">“A Mariana é uma artista. Saio do atelier sentindo que ganhei um momento só meu, e minhas unhas duram semanas perfeitas.”</p>
+        <div class="testi-author">
+          <div class="avatar"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80" alt=""/></div>
+          <div><div class="name">Camila Andrade</div><div class="meta">Cliente há 3 anos</div></div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <div class="stars" aria-label="5 estrelas">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+        </div>
+        <p class="testi-quote">“Atendimento impecável, ambiente acolhedor e um capricho que eu nunca tinha encontrado. Recomendo de olhos fechados.”</p>
+        <div class="testi-author">
+          <div class="avatar"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&q=80" alt=""/></div>
+          <div><div class="name">Beatriz Tavares</div><div class="meta">Cliente há 1 ano</div></div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <div class="stars" aria-label="5 estrelas">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+        </div>
+        <p class="testi-quote">“Os alongamentos em fibra ficaram naturais e leves. Recebi elogios o mês inteiro. Já agendei o retoque!”</p>
+        <div class="testi-author">
+          <div class="avatar"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&q=80" alt=""/></div>
+          <div><div class="name">Helena Vasques</div><div class="meta">Cliente há 6 meses</div></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Perguntas frequentes</span>
+      <h2>Tudo que você precisa saber</h2>
+    </div>
+    <div class="faq-wrap">
+      <details class="faq-item">
+        <summary>Quanto tempo dura cada atendimento?</summary>
+        <div class="faq-body">A manicure clássica leva cerca de 50 minutos. Esmaltação em gel, 1h15. Alongamento em fibra leva entre 2h e 2h30. Reservo intervalos entre clientes para um atendimento sem pressa.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Quanto tempo dura a esmaltação em gel?</summary>
+        <div class="faq-body">Em média 18 a 21 dias com brilho de espelho intacto. A durabilidade depende dos cuidados em casa — sempre uso luvas para tarefas domésticas e mando um guia rápido por WhatsApp após o atendimento.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Como funciona o agendamento?</summary>
+        <div class="faq-body">100% pelo WhatsApp. Confirmo o horário em até 1h e envio um lembrete 24h antes. Atendo com hora marcada, sem fila de espera.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Quais são as formas de pagamento?</summary>
+        <div class="faq-body">PIX (com 5% de desconto), dinheiro e cartões de crédito/débito (Visa, Master, Elo e Amex) em até 3x sem juros.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- LOCALIZAÇÃO -->
+<section class="loc" id="contato">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Onde estamos</span>
+      <h2>Visite o atelier</h2>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-info">
+        <h3 style="font-size: 24px; margin-bottom: 6px;">Horários de atendimento</h3>
+        <p style="color: var(--muted); font-size: 14px;">Apenas com hora marcada. Confirme via WhatsApp.</p>
+        <ul>
+          <li><span>Terça a sexta</span><span>10h — 20h</span></li>
+          <li><span>Sábado</span><span>9h — 18h</span></li>
+          <li><span>Domingo e segunda</span><span>Fechado</span></li>
+        </ul>
+        <div class="addr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <strong>Atelier Mariana Reis</strong><br/>
+            <span style="color: var(--muted); font-size: 14px;">Rua dos Pinheiros, 482 · Sala 14<br/>Pinheiros · São Paulo · SP</span>
+          </div>
+        </div>
+      </div>
+      <div class="loc-map">
+        <iframe
+          title="Mapa do atelier"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-46.6900%2C-23.5680%2C-46.6750%2C-23.5580&layer=mapnik&marker=-23.5630%2C-46.6825"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final-cta">
+  <div class="container">
+    <span class="eyebrow" style="color: var(--lilac);">Vamos conversar</span>
+    <h2>Pronta para um momento <em>só seu</em>?</h2>
+    <p>Agende seu horário pelo WhatsApp e receba uma sugestão personalizada de cores e acabamentos para a próxima estação.</p>
+    <a class="btn btn-primary" href="https://wa.me/5511999990000?text=Ol%C3%A1%20Mariana%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487 1.713.741 2.379.806 3.234.679.521-.078 1.602-.654 1.827-1.287.226-.633.226-1.176.158-1.287-.067-.111-.247-.176-.516-.293z"/></svg>
+      Agendar agora
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site">
+  <div class="container row">
+    <div>© 2026 Atelier Mariana Reis · Todos os direitos reservados</div>
+    <div class="socials">
+      <a href="https://wa.me/5511999990000" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487 1.713.741 2.379.806 3.234.679.521-.078 1.602-.654 1.827-1.287.226-.633.226-1.176.158-1.287-.067-.111-.247-.176-.516-.293z"/></svg>
+      </a>
+      <a href="https://instagram.com/atelier.marianareis" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLUTUANTE -->
+<a class="wa-float" href="https://wa.me/5511999990000?text=Ol%C3%A1%20Mariana%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+</body>
+</html>
