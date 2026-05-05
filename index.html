@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Atelier Mariana Reis · Nail Designer Boutique</title>
-  <meta name="description" content="Atelier boutique de nail design em São Paulo. Manicure, pedicure spa, esmaltação em gel, alongamento e nail art autoral por Mariana Reis." />
+  <meta name="description" content="Nail Art · Balneário Camboriú. Manicure, pedicure spa, esmaltação em gel, alongamento e nail art autoral por Mariana Reis." />
   <meta name="author" content="Atelier Mariana Reis" />
 
   <meta property="og:title" content="Atelier Mariana Reis · Nail Designer Boutique" />
@@ -318,6 +318,99 @@
       .gallery-item.wide { grid-column: span 1; }
       footer .row { justify-content: center; text-align: center; }
     }
+  
+    .logo_principal {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      max-width: 25%;
+      padding-left: 25px;
+    }
+
+    .contact-icon-wrap {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.15rem;
+    }
+    .contact-icon-wrap.green { background: linear-gradient(135deg, #25D366, #1ab855); color: white; }
+
+    .contact-info-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 14px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: all 0.3s;
+      text-decoration: none;
+      color: inherit;
+      backdrop-filter: blur(4px);
+  }
+  /* SERVICES */
+    .services-section{
+      background:linear-gradient(180deg, transparent, rgba(235,214,251,.35), transparent);
+    }
+    .price-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:54px}
+    @media(max-width:900px){ .price-grid{grid-template-columns:1fr} }
+    .price-card{
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:34px 30px;
+      box-shadow:var(--shadow-sm);
+      transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      position:relative; overflow:hidden;
+    }
+    .price-card::before{
+      content:""; position:absolute; inset:0 0 auto 0; height:3px;
+      background:linear-gradient(90deg, var(--indigo), var(--lilac));
+      opacity:0; transition:opacity .25s ease;
+    }
+    .price-card:hover{transform:translateY(-4px); box-shadow:var(--shadow-md); border-color:transparent}
+    .price-card:hover::before{opacity:1}
+    .price-card .tag{
+      display:inline-block; font-size:11px; letter-spacing:.22em; text-transform:uppercase;
+      color:var(--indigo-deep); background:var(--lilac-soft);
+      padding:6px 12px; border-radius:999px;
+    }
+    .price-card h3{
+      font-family:'Cormorant Garamond',serif; font-size:28px; font-weight:500;
+      margin:18px 0 10px; color:var(--ink);
+    }
+    .price-card p{color:var(--muted); font-size:14.5px; min-height:84px}
+    .price-row{
+      display:flex; align-items:baseline; gap:8px; margin-top:18px;
+      padding-top:20px; border-top:1px solid var(--line);
+    }
+    .price-row .currency{font-size:13px; color:var(--muted); letter-spacing:.16em; text-transform:uppercase}
+    .price-row .value{
+      font-family:'Cormorant Garamond',serif; font-weight:600;
+      font-size:46px; line-height:1; color:var(--indigo-deep);
+      letter-spacing:-1px;
+    }
+    .price-row .value .cents{font-size:18px; vertical-align:top; margin-left:4px; color:var(--ink-soft); font-weight:500}
+    .price-card .meta{font-size:12px; color:var(--muted); margin-top:10px; letter-spacing:.04em}
+    .price-card.featured{background:linear-gradient(180deg, #fff, var(--rose)); border-color:transparent}
+    .price-card.featured::before{opacity:1}
+  .center{text-align:center}
+    /* SECTION DIVIDER */
+    .divider{display:flex; align-items:center; gap:14px; justify-content:center; color:var(--indigo-deep); margin-bottom:6px}
+    .divider span{height:1px; width:40px; background:var(--indigo)}
+    .divider em{font-family:'Cormorant Garamond',serif; font-style:italic; font-size:18px}
+
+
+    .eapps-instagram-feed-container {
+      
+    }
+
+
+
   </style>
 </head>
 <body>
@@ -325,10 +418,7 @@
 <!-- HEADER -->
 <header class="site">
   <div class="container nav">
-    <a href="#top" class="brand">
-      <span class="brand-mark" aria-hidden="true"></span>
-      Mariana Reis
-    </a>
+    <a href="index.html" class="logo_principal"><img src="assets/img/logo.png"></a>
     <button class="menu-toggle" aria-label="Abrir menu" onclick="document.getElementById('navlinks').classList.toggle('open')">
       <span></span><span></span><span></span>
     </button>
@@ -349,9 +439,9 @@
 <section class="hero">
   <div class="container hero-grid">
     <div>
-      <span class="eyebrow">Atelier Boutique de Nail Design</span>
-      <h1>Unhas que contam <em>histórias</em> de cuidado e estilo.</h1>
-      <p>Um espaço intimista no coração de Pinheiros onde técnica, higiene impecável e arte se encontram para realçar a sua melhor versão.</p>
+      <span class="eyebrow">Nail Art · Balneário Camboriú</span>
+      <h1>Unhas que contam <em><strong>histórias</strong></em>.</h1>
+      <p>Atendimento intimista com técnica e arte que se encontram para realçar sua melhor versão.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="https://wa.me/5511999990000?text=Ol%C3%A1%20Mariana%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -361,6 +451,11 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           Ver no Instagram
         </a>
+        <a href="https://instagram.com/atelier.marianareis" style="display: flex; flex-wrap: nowrap; align-content: center; align-items: center; gap: 05%;">
+          <div class="contact-icon-wrap green" class="fab fa-whatsapp"></div>
+          Ver serviços
+        </a>
+
       </div>
     </div>
     <div class="hero-visual">
@@ -369,7 +464,7 @@
         <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=900&q=80" alt="Mãos com nail art delicada em tons rosé e lavanda" />
       </div>
       <div class="hero-badge">
-        <span class="num">8<small style="font-size:18px">+</small></span>
+        <span class="num"><strong style="font-size:50px">10</strong><span>+</span></span>
         <span class="lbl">anos cuidando das suas mãos com carinho</span>
       </div>
     </div>
@@ -396,55 +491,6 @@
   </div>
 </section>
 
-<!-- SERVIÇOS -->
-<section id="servicos">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Serviços e investimento</span>
-      <h2>Cuidado sob medida para cada estilo</h2>
-      <p class="lead">Da clássica francesinha à nail art autoral. Todos os serviços incluem hidratação, esmaltação base e acabamento espelhado.</p>
-    </div>
-    <div class="services-grid">
-      <article class="service">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2c-3 4-3 9 0 14 3-5 3-10 0-14z"/><path d="M12 16v6"/></svg></div>
-        <h3>Manicure clássica</h3>
-        <p class="service-desc">Cutilagem delicada, lixamento e esmaltação tradicional com cores premium.</p>
-        <div class="service-foot"><span class="service-price">R$ 75</span><span class="service-time">50 min</span></div>
-      </article>
-      <article class="service">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12c4-3 14-3 18 0"/><path d="M5 17c3-2 11-2 14 0"/><path d="M7 7c2-1 8-1 10 0"/></svg></div>
-        <h3>Pedicure spa</h3>
-        <p class="service-desc">Escalda-pés aromático, esfoliação com sais minerais e massagem relaxante.</p>
-        <div class="service-foot"><span class="service-price">R$ 110</span><span class="service-time">1h 10min</span></div>
-      </article>
-      <article class="service">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></div>
-        <h3>Esmaltação em gel</h3>
-        <p class="service-desc">Brilho de espelho que dura até 21 dias, com cores curadas a cada estação.</p>
-        <div class="service-foot"><span class="service-price">R$ 130</span><span class="service-time">1h 15min</span></div>
-      </article>
-      <article class="service">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 21V8c0-2 3-5 7-5s7 3 7 5v13"/><path d="M9 13h6"/></svg></div>
-        <h3>Alongamento em fibra</h3>
-        <p class="service-desc">Estrutura natural, leve e resistente em fibra de vidro, modelada com precisão.</p>
-        <div class="service-foot"><span class="service-price">R$ 220</span><span class="service-time">2h 30min</span></div>
-      </article>
-      <article class="service">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.5 6.5L21 10l-5 4.5L17.5 22 12 18l-5.5 4L8 14.5 3 10l6.5-1.5L12 2z"/></svg></div>
-        <h3>Nail art autoral</h3>
-        <p class="service-desc">Desenhos exclusivos pintados à mão, do minimalista ao statement total.</p>
-        <div class="service-foot"><span class="service-price">R$ 60+</span><span class="service-time">a partir</span></div>
-      </article>
-      <article class="service">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 12a8 8 0 1 1-16 0 8 8 0 0 1 16 0z"/><path d="M8 12l3 3 5-6"/></svg></div>
-        <h3>Combo mãos + pés</h3>
-        <p class="service-desc">Manicure clássica e pedicure spa em sequência. O ritual completo de bem-estar.</p>
-        <div class="service-foot"><span class="service-price">R$ 165</span><span class="service-time">2h</span></div>
-      </article>
-    </div>
-  </div>
-</section>
-
 <!-- GALERIA -->
 <section class="gallery" id="galeria">
   <div class="container">
@@ -466,6 +512,10 @@
     </div>
   </div>
 </section>
+
+<!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-b6a90d1b-ea40-4d85-a731-742251ce2e76" data-elfsight-app-lazy></div>
 
 <!-- DEPOIMENTOS -->
 <section class="testi" id="depoimentos">
@@ -548,6 +598,83 @@
     </div>
   </div>
 </section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="services-section">
+    <div class="container">
+      <div class="center">
+        <div class="divider"><span></span><em>tabela</em><span></span></div>
+        <h2 class="section-title">Serviços & investimento</h2>
+        <p class="section-lead">Procedimentos com produtos premium, cabine LED/UV e protocolo completo de cuidado da unha natural.</p>
+      </div>
+
+      <div class="price-grid">
+        <article class="price-card">
+          <span class="tag">Mais procurado</span>
+          <h3>Esmaltação em Gel</h3>
+          <p>Esmalte em gel fotopolimerizável, curado em cabine LED/UV. Brilho intenso, acabamento uniforme e durabilidade prolongada.</p>
+          <div class="price-row">
+            <span class="currency">a partir de</span>
+            <span class="value">110<span class="cents">,00</span></span>
+          </div>
+          <div class="meta">Duração: 1h00 a 1h30</div>
+        </article>
+
+        <article class="price-card featured">
+          <span class="tag">Banho de Gel</span>
+          <h3>Reforço & proteção</h3>
+          <p>Gel construtor sobre a unha natural — reforço, proteção e acabamento uniforme, sem alongamento. Inclui cutilagem e esmaltação em gel.</p>
+          <div class="price-row">
+            <span class="currency">por</span>
+            <span class="value">160<span class="cents">,00</span></span>
+          </div>
+          <div class="meta">Duração: 1h00 a 1h30</div>
+        </article>
+
+        <article class="price-card">
+          <span class="tag">Alongamento</span>
+          <h3>Quadrada · Redonda</h3>
+          <p>Molde F1, fibra de vidro ou tips de gel — você escolhe. Inclui cutilagem e esmaltação em gel.</p>
+          <div class="price-row">
+            <span class="currency">a partir de</span>
+            <span class="value">250<span class="cents">,00</span></span>
+          </div>
+          <div class="meta">Duração: 2h30 a 3h00</div>
+        </article>
+
+        <article class="price-card">
+          <span class="tag">Alongamento premium</span>
+          <h3>Almond · Bailarina</h3>
+          <p>Formatos alongados com curvatura precisa. Inclui cutilagem e esmaltação em gel.</p>
+          <div class="price-row">
+            <span class="currency">por</span>
+            <span class="value">270<span class="cents">,00</span></span>
+          </div>
+          <div class="meta">Duração: 2h30 a 3h00</div>
+        </article>
+
+        <article class="price-card">
+          <span class="tag">Manutenção</span>
+          <h3>Do alongamento</h3>
+          <p>Remoção parcial, correção da estrutura, nivelamento e novo acabamento. Inclui uma unha de reposição, cutilagem e esmaltação em gel.</p>
+          <div class="price-row">
+            <span class="currency">por</span>
+            <span class="value">160<span class="cents">,00</span></span>
+          </div>
+          <div class="meta">Duração: 1h45 a 2h00</div>
+        </article>
+
+        <article class="price-card">
+          <span class="tag">Manutenção externa</span>
+          <h3>Feito por outra profissional</h3>
+          <p>Avaliação prévia. Apenas alongamentos em gel — não realizamos manutenção em acrílico ou polygel.</p>
+          <div class="price-row">
+            <span class="currency">por</span>
+            <span class="value">190<span class="cents">,00</span></span>
+          </div>
+          <div class="meta">Duração: 2h00 a 2h30</div>
+        </article>
+      </div>
 
 <!-- LOCALIZAÇÃO -->
 <section class="loc" id="contato">
