@@ -745,15 +745,34 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       .courses-eyebrow { order: -2; }
       .courses-divider { order: -1; }
       
-      /* MOBILE: Servicos em tabela condensada */
-      .price-grid { grid-template-columns: 1fr; gap: 12px; margin-top: 32px; }
-      .price-card { padding: 16px 14px; }
-      .price-card h3 { font-size: 16px; margin: 10px 0 6px; }
-      .price-card p { min-height: auto; font-size: 13px; margin-bottom: 12px; }
-      .price-row { margin-top: 10px; padding-top: 10px; gap: 4px; }
-      .price-row .value { font-size: 24px; }
-      .price-card .meta { font-size: 11px; margin-top: 6px; }
-      .price-card .tag { font-size: 10px; padding: 4px 10px; }
+      /* MOBILE: Servicos em tabela delicada */
+      .price-grid { display: none; }
+      .mobile-price-table {
+        display: block !important;
+        margin-top: 32px;
+        background: #fff;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: var(--shadow-sm);
+        border: 1px solid var(--line);
+      }
+      .mobile-price-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 0;
+        border-bottom: 1px solid rgba(104, 127, 229, 0.08);
+      }
+      .mobile-price-row:last-child { border-bottom: none; }
+      .mobile-price-info { display: flex; flex-direction: column; gap: 2px; }
+      .mobile-price-name { font-family: var(--serif); font-size: 15px; font-weight: 500; color: var(--ink); }
+      .mobile-price-time { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+      .mobile-price-value { font-family: var(--serif); font-size: 17px; font-weight: 600; color: var(--indigo-deep); }
+      .mobile-price-tag { 
+        font-size: 9px; text-transform: uppercase; letter-spacing: 0.1em; 
+        color: var(--indigo); background: rgba(104, 127, 229, 0.08);
+        padding: 2px 8px; border-radius: 999px; width: fit-content; margin-bottom: 4px;
+      }
       
       /* MOBILE: Quick-CTA com margem reduzida */
       .quick-cta { padding: 24px 0; margin: 20px 0; }
@@ -1119,6 +1138,58 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
         <div class="divider"><span></span><em>tabela</em><span></span></div>
         <h2 class="section-title">Serviços & investimento</h2>
         <p class="section-lead">Procedimentos com produtos premium, cabine LED/UV e protocolo completo de cuidado da unha natural.</p>
+      </div>
+
+      <!-- MOBILE PRICE TABLE (Visible only on mobile) -->
+      <div class="mobile-price-table" style="display: none;">
+        <div class="mobile-price-row">
+          <div class="mobile-price-info">
+            <span class="mobile-price-tag">Mais procurado</span>
+            <span class="mobile-price-name">Esmaltação em Gel</span>
+            <span class="mobile-price-time">1h00 a 1h30</span>
+          </div>
+          <span class="mobile-price-value">R$ 110</span>
+        </div>
+        <div class="mobile-price-row">
+          <div class="mobile-price-info">
+            <span class="mobile-price-tag">Proteção</span>
+            <span class="mobile-price-name">Banho de Gel</span>
+            <span class="mobile-price-time">1h00 a 1h30</span>
+          </div>
+          <span class="mobile-price-value">R$ 160</span>
+        </div>
+        <div class="mobile-price-row">
+          <div class="mobile-price-info">
+            <span class="mobile-price-tag">Alongamento</span>
+            <span class="mobile-price-name">Quadrada · Redonda</span>
+            <span class="mobile-price-time">2h30 a 3h00</span>
+          </div>
+          <span class="mobile-price-value">R$ 250</span>
+        </div>
+        <div class="mobile-price-row">
+          <div class="mobile-price-info">
+            <span class="mobile-price-tag">Premium</span>
+            <span class="mobile-price-name">Almond · Bailarina</span>
+            <span class="mobile-price-time">2h30 a 3h00</span>
+          </div>
+          <span class="mobile-price-value">R$ 270</span>
+        </div>
+        <div class="mobile-price-row">
+          <div class="mobile-price-info">
+            <span class="mobile-price-tag">Manutenção</span>
+            <span class="mobile-price-name">Do alongamento</span>
+            <span class="mobile-price-time">1h45 a 2h00</span>
+          </div>
+          <span class="mobile-price-value">R$ 160</span>
+        </div>
+        <div class="mobile-price-row">
+          <div class="mobile-price-info">
+            <span class="mobile-price-tag">Externa</span>
+            <span class="mobile-price-name">Manutenção externa</span>
+            <span class="mobile-price-time">2h00 a 2h30</span>
+          </div>
+          <span class="mobile-price-value">R$ 190</span>
+        </div>
       </div>
 
       <div class="price-grid">
