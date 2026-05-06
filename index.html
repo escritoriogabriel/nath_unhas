@@ -189,14 +189,14 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       box-shadow: var(--shadow-md);
       display: flex; align-items: center; gap: 14px;
     }
-    .hero-badge .num { font-family: var(--serif); font-size: 32px; color: var(--indigo); line-height: 1; }
+    .hero-badge { font-family: var(--serif); font-size: 32px; color: var(--indigo); line-height: 1; }
     .hero-badge .lbl { font-size: 12px; color: var(--muted); line-height: 1.3; max-width: 110px; }
     .hero-blob {
       position: absolute; top: -20px; right: -30px;
       width: 160px; height: 160px; border-radius: 50%;
       background: var(--lilac); z-index: -1; filter: blur(8px); opacity: .9;
     }
-
+    .num { font-size: 28px; }
     /* Sobre */
     .about { background: #fff; }
     .about-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 70px; align-items: center; }
@@ -247,6 +247,21 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
     .gallery-item:hover img { transform: scale(1.06); }
     .gallery-item.tall { grid-row: span 1; }
     .gallery-item.wide { grid-column: span 1; }
+
+    @media screen and (max-width: 900px) {
+      .gallery-item {
+      overflow: hidden; border-radius: 18px; position: relative;
+      box-shadow: var(--shadow-sm);
+    }
+      .gallery-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .6s ease;
+    }
+      .gallery-item:hover img { transform: scale(1.06); }
+      .gallery-item.tall { display: none; }
+      .gallery-item.wide { display: none; }
+    }
+    
 
     /* Depoimentos */
     .testi { background: var(--lilac); }
@@ -366,7 +381,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
     }
     @media (max-width: 900px) {
       .atelier-container { grid-template-columns: 1fr; gap: 40px; }
-      .atelier-visual { height: 350px; }
+      .atelier-visual { height: 90%; }
     }
 
     /* Quick CTA */
@@ -454,7 +469,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
     /* Courses Section */
     .courses-section {
       background: linear-gradient(135deg, var(--ink) 0%, #3a3460 60%, #4d3a7a 100%);
-      padding: 110px 0;
+      padding: 80px 0;
       position: relative;
       overflow: hidden;
     }
@@ -662,7 +677,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
 
     /* Responsivo */
     @media (max-width: 900px) {
-      section { padding: 70px 0; }
+      section { padding: 30px 0; }
       .hero { padding: 50px 0 70px; }
       .hero-grid, .about-grid, .loc-grid { grid-template-columns: 1fr; gap: 50px; }
       .hero-visual { order: -1; max-width: 380px; margin: 0 auto; }
@@ -676,6 +691,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       .menu-toggle {
         display: flex; flex-direction: column; gap: 5px;
         padding: 8px; background: none;
+        padding-right: 30px;
       }
       .menu-toggle span { width: 22px; height: 1.5px; background: var(--ink); transition: .3s; }
       .nav-links {
@@ -697,13 +713,14 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       
       /* MOBILE: Hero - Texto à esquerda, foto reduzida */
       .hero h1 { font-size: 28px; margin-bottom: 16px; }
-      .hero-visual { max-width: 100%; }
+      .hero-visual { max-width: 100%; display: none }
       .hero-img { aspect-ratio: 16/9; border-radius: 16px; }
       
       /* MOBILE: Badge reduzido */
-      .hero-badge { padding: 10px 14px; font-size: 10px; left: 5px; bottom: 5px; }
-      .hero-badge .num { font-size: 20px; }
-      .hero-badge .lbl { font-size: 9px; max-width: 70px; }
+      .hero-badge { padding: 8px 9px; font-size: 10px; left: 5px; bottom: 5px; }
+      .hero-badge { font-size: 18px; }
+      .num { font-size: 30px; }
+      .hero-badge .lbl { font-size: 11px; max-width: 70px; }
       
       /* MOBILE: Sobre - Imagem reduzida */
       .about-img { aspect-ratio: 16/9; }
@@ -718,7 +735,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
       
       /* MOBILE: Ocultar depoimentos */
-      .testi-grid { display: none; }
+      .testi { display: none; }
       
       /* MOBILE: Secao de Cursos sem foto */
       .courses-grid { grid-template-columns: 1fr; }
@@ -757,6 +774,10 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       text-decoration: none;
       max-width: 15%;
       padding-left: 25px;
+    }
+
+    @media (max-width: 900px) {
+      .logo_principal { max-width: 30%; padding-left: 30px; }
     }
 
     .contact-icon-wrap {
@@ -854,7 +875,10 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       <a href="#depoimentos">Depoimentos</a>
       <a href="#cursos">Cursos</a>
       <a href="#faq">FAQ</a>
-      <a href="https://wa.me/5511999990000?text=Ol%C3%A1%20Nathalia%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="nav-cta">Agendar</a>
+      <a class="btn btn-primary" href="https://wa.me/5511999990000?text=Ol%C3%A1%20Nathalia%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.">
+          <img src="assets/img/whatsapp.svg" alt="WhatsApp" style="width: 20px; height: 20px;" />
+          Agendar pelo WhatsApp
+        </a>
     </nav>
   </div>
 </header>
@@ -890,7 +914,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
         <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=900&q=80" alt="Mãos com nail art delicada em tons rosé e lavanda" />
       </div>
       <div class="hero-badge">
-        <span class="num"><span>+</span><strong style="font-size:50px">10</strong></span>
+        <span class="num">+<strong>10</strong></span>
         <span class="lbl">anos cuidando das suas mãos com carinho</span>
       </div>
     </div>
@@ -1050,9 +1074,10 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             Ver a formação completa
           </a>
-          <a class="btn-course-ghost" href="https://wa.me/5511999990000?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20forma%C3%A7%C3%A3o%20profissional.">
-            Falar com a Nath
-          </a>
+          <a class="btn btn-primary" href="https://wa.me/5511999990000?text=Ol%C3%A1%20Nathalia%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.">
+              <img src="assets/img/whatsapp.svg" alt="WhatsApp" style="width: 20px; height: 20px;" />
+              Fazer inscrição agora
+            </a>
         </div>
       </div>
     </div>
@@ -1214,7 +1239,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
     <div class="atelier-visual">
       <iframe
         title="Mapa do atelier"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=-46.6900%2C-23.5680%2C-46.6750%2C-23.5580&layer=mapnik&marker=-23.5630%2C-46.6825"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-48.63873571157456%2C-26.993568024607953%2C-48.6358255147934%2C-26.991419391916537&amp;layer=mapnik&amp;marker=-26.992492518379848%2C-48.63727927207947"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
       </iframe>
@@ -1228,10 +1253,10 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
     <span class="eyebrow" style="color: var(--lilac);">Vamos conversar</span>
     <h2>Pronta para um momento <em>só seu</em>?</h2>
     <p>Agende seu horário pelo WhatsApp e receba uma sugestão personalizada de cores e acabamentos para a próxima estação.</p>
-    <a class="btn btn-primary" href="https://wa.me/5511999990000?text=Ol%C3%A1%20Nathalia%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487 1.713.741 2.379.806 3.234.679.521-.078 1.602-.654 1.827-1.287.226-.633.226-1.176.158-1.287-.067-.111-.247-.176-.516-.293z"/></svg>
-      Agendar agora
-    </a>
+          <a class="btn btn-primary" href="https://wa.me/5511999990000?text=Ol%C3%A1%20Nathalia%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.">
+          <img src="assets/img/whatsapp.svg" alt="WhatsApp" style="width: 20px; height: 20px;" />
+          Agendar agora
+        </a>
   </div>
 </section>
 
