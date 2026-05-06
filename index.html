@@ -84,7 +84,7 @@
     }
     .nav-links { display: flex; gap: 30px; align-items: center; }
     .nav-links a {
-      font-size: 14px; color: var(--muted); transition: color .2s;
+      font-size: 15px; color: var(--muted); transition: color .2s;
     }
     .nav-links a:hover { color: var(--indigo); }
     .nav-cta {
@@ -700,9 +700,11 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
         background: var(--rose); border-bottom: 1px solid var(--line);
         display: none;
       }
-      .nav-links.open { display: flex; }
-      .nav-links a, .nav-links .nav-cta { padding: 12px 0; width: 100%; text-align: left; }
+      .nav-links.open { display: flex; padding:12px 24px 24px; text-align: left; font-size:15px;}
+      .nav-links a, .nav-links { padding: 12px 0; width: 100%; text-align: left; justify-content: center;}
       .nav-cta { border-radius: 12px; text-align: center !important; }
+      .header-btn-primary { display: inline-flex; align-items: center; gap: 10px; padding: 15px 26px; border-radius: 999px; font-size: 14px; font-weight: 500; letter-spacing: 0.02em; background: var(--lilac); color: var(--ink); border: none; cursor: pointer;
+    transition: transform .2s, box-shadow .2s, background .2s; }
     }
     @media (max-width: 560px) {
       .services-grid { grid-template-columns: 1fr; }
@@ -767,7 +769,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       .mobile-price-info { display: flex; flex-direction: column; gap: 2px; }
       .mobile-price-name { font-family: var(--serif); font-size: 15px; font-weight: 500; color: var(--ink); }
       .mobile-price-time { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
-      .mobile-price-value { font-family: var(--serif); font-size: 17px; font-weight: 600; color: var(--indigo-deep); }
+      .mobile-price-value { font-family: var(--serif); font-size: 21px; font-weight: bold; color: var(--indigo-deep); }
       .mobile-price-tag { 
         font-size: 9px; text-transform: uppercase; letter-spacing: 0.1em; 
         color: var(--indigo); background: rgba(104, 127, 229, 0.08);
@@ -775,7 +777,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       }
       
       /* MOBILE: Quick-CTA com margem reduzida */
-      .quick-cta { padding: 24px 0; margin: 20px 0; }
+      .quick-cta { padding: 24px 0; margin: 20px 0; border-radius: 20px; }
       .quick-cta .container { padding: 0 16px; }
       .quick-cta h3 { font-size: 18px; margin-bottom: 12px; }
       .quick-cta .cta-sub { font-size: 14px; margin-bottom: 16px; }
@@ -829,7 +831,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       background:linear-gradient(180deg, transparent, rgba(235,214,251,.35), transparent);
     }
     .price-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:54px}
-    @media(max-width:900px){ .price-grid{grid-template-columns:1fr} }
+    @media(max-width:900px){ .price-grid{grid-template-columns:1fr; display: none;} }
     .price-card{
       background:var(--surface);
       border:1px solid var(--line);
@@ -894,7 +896,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       <a href="#depoimentos">Depoimentos</a>
       <a href="#cursos">Cursos</a>
       <a href="#faq">FAQ</a>
-      <a class="btn btn-primary" href="https://wa.me/5511999990000?text=Ol%C3%A1%20Nathalia%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.">
+      <a class="header-btn-primary" href="https://wa.me/5511999990000?text=Ol%C3%A1%20Nathalia%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." style="display: inline-flex; align-items: center;    gap: 10px;    padding: 15px 26px;    border-radius: 999px;    font-size: 14px;    font-weight: 500;    letter-spacing: 0.02em;    transition: transform .2s, box-shadow .2s, background .2s;    background: linear-gradient(134deg, #25D366 0%, #1ab855 100%); color: white;">
           <img src="assets/img/whatsapp.svg" alt="WhatsApp" style="width: 20px; height: 20px;" />
           Agendar pelo WhatsApp
         </a>
@@ -1148,15 +1150,16 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
             <span class="mobile-price-name">Esmaltação em Gel</span>
             <span class="mobile-price-time">1h00 a 1h30</span>
           </div>
-          <span class="mobile-price-value">110</span>
+          <span class="currency"><span class="currency" style="padding-right: 15px; font-size: 10px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;" >a partir de</span><span class="mobile-price-value">110</span>
         </div>
+                
         <div class="mobile-price-row">
           <div class="mobile-price-info">
             <span class="mobile-price-tag">Proteção</span>
             <span class="mobile-price-name">Banho de Gel</span>
             <span class="mobile-price-time">1h00 a 1h30</span>
           </div>
-          <span class="mobile-price-value">160</span>
+          <span class="currency"><span class="currency" style="padding-right: 15px; font-size: 10px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;" >a partir de</span><span class="mobile-price-value">160</span>
         </div>
         <div class="mobile-price-row">
           <div class="mobile-price-info">
@@ -1164,7 +1167,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
             <span class="mobile-price-name">Quadrada · Redonda</span>
             <span class="mobile-price-time">2h30 a 3h00</span>
           </div>
-          <span class="mobile-price-value">250</span>
+          <span class="currency"><span class="currency" style="padding-right: 15px; font-size: 10px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;" >a partir de</span><span class="mobile-price-value">250</span>
         </div>
         <div class="mobile-price-row">
           <div class="mobile-price-info">
@@ -1172,7 +1175,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
             <span class="mobile-price-name">Almond · Bailarina</span>
             <span class="mobile-price-time">2h30 a 3h00</span>
           </div>
-          <span class="mobile-price-value">270</span>
+          <span class="currency"><span class="currency" style="padding-right: 15px; font-size: 10px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;" >a partir de</span><span class="mobile-price-value">270</span>
         </div>
         <div class="mobile-price-row">
           <div class="mobile-price-info">
@@ -1180,7 +1183,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
             <span class="mobile-price-name">Do alongamento</span>
             <span class="mobile-price-time">1h45 a 2h00</span>
           </div>
-          <span class="mobile-price-value">160</span>
+          <span class="currency"><span class="currency" style="padding-right: 15px; font-size: 10px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;" >a partir de</span><span class="mobile-price-value">160</span>
         </div>
         <div class="mobile-price-row">
           <div class="mobile-price-info">
@@ -1188,7 +1191,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
             <span class="mobile-price-name">Manutenção externa</span>
             <span class="mobile-price-time">2h00 a 2h30</span>
           </div>
-          <span class="mobile-price-value">190</span>
+          <span class="currency"><span class="currency" style="padding-right: 15px; font-size: 10px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;" >a partir de</span><span class="mobile-price-value">190</span>
         </div>
       </div>
 
@@ -1198,7 +1201,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
           <h3>Esmaltação em Gel</h3>
           <p>Esmalte em gel fotopolimerizável, curado em cabine LED/UV. Brilho intenso, acabamento uniforme e durabilidade prolongada.</p>
           <div class="price-row">
-            <span class="currency">a partir de</span>
+            <span class="currency"><span class="currency" style="padding-right: 15px; font-size: 10px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;" >a partir de</span></span>
             <span class="value">110<span class="cents">,00</span></span>
           </div>
           <div class="meta">Duração: 1h00 a 1h30</div>
