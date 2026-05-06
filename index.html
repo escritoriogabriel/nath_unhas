@@ -694,6 +694,61 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       .gallery-grid { grid-template-columns: 1fr; }
       .gallery-item.wide { grid-column: span 1; }
       footer .row { justify-content: center; text-align: center; }
+      
+      /* MOBILE: Hero - Texto à esquerda, foto reduzida */
+      .hero h1 { font-size: 28px; margin-bottom: 16px; }
+      .hero-visual { max-width: 100%; }
+      .hero-img { aspect-ratio: 16/9; border-radius: 16px; }
+      
+      /* MOBILE: Badge reduzido */
+      .hero-badge { padding: 10px 14px; font-size: 10px; left: 5px; bottom: 5px; }
+      .hero-badge .num { font-size: 20px; }
+      .hero-badge .lbl { font-size: 9px; max-width: 70px; }
+      
+      /* MOBILE: Sobre - Imagem reduzida */
+      .about-img { aspect-ratio: 16/9; }
+      
+      /* MOBILE: Estatísticas em lista horizontal compacta */
+      .about-stats { flex-direction: row; gap: 12px; padding-top: 20px; margin-top: 20px; justify-content: space-around; }
+      .about-stats div { flex: 1; text-align: center; }
+      .about-stats div .n { font-size: 20px; }
+      .about-stats div .l { font-size: 9px; }
+      
+      /* MOBILE: Galeria em 2 colunas */
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
+      
+      /* MOBILE: Ocultar depoimentos */
+      .testi-grid { display: none; }
+      
+      /* MOBILE: Secao de Cursos sem foto */
+      .courses-grid { grid-template-columns: 1fr; }
+      .courses-img-wrap { display: none; }
+      
+      /* MOBILE: Mover Formacao para cima do Badge */
+      .courses-eyebrow { order: -2; }
+      .courses-divider { order: -1; }
+      
+      /* MOBILE: Servicos em tabela condensada */
+      .price-grid { grid-template-columns: 1fr; gap: 12px; margin-top: 32px; }
+      .price-card { padding: 16px 14px; }
+      .price-card h3 { font-size: 16px; margin: 10px 0 6px; }
+      .price-card p { min-height: auto; font-size: 13px; margin-bottom: 12px; }
+      .price-row { margin-top: 10px; padding-top: 10px; gap: 4px; }
+      .price-row .value { font-size: 24px; }
+      .price-card .meta { font-size: 11px; margin-top: 6px; }
+      .price-card .tag { font-size: 10px; padding: 4px 10px; }
+      
+      /* MOBILE: Quick-CTA com margem reduzida */
+      .quick-cta { padding: 24px 0; margin: 20px 0; }
+      .quick-cta .container { padding: 0 16px; }
+      .quick-cta h3 { font-size: 18px; margin-bottom: 12px; }
+      .quick-cta .cta-sub { font-size: 14px; margin-bottom: 16px; }
+      
+      /* MOBILE: Horarios e mapa reduzidos */
+      .atelier-section { padding: 40px 0; }
+      .atelier-hours h3 { font-size: 16px; }
+      .atelier-hours ul li { font-size: 13px; padding: 6px 0; }
+      .atelier-visual iframe { height: 250px; }
     }
   
     .logo_principal {
