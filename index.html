@@ -795,6 +795,11 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       max-width: 15%;
       padding-left: 25px;
     }
+    .logo_principal img {
+      display: block;
+      width: 100%;
+      filter: brightness(0) invert(1);
+    }
 
     @media (max-width: 900px) {
       .logo_principal { max-width: 30%; padding-left: 30px; }
@@ -829,7 +834,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
     .services-section{
       background:linear-gradient(180deg, transparent, rgba(235,214,251,.35), transparent);
     }
-    .price-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:54px}
+    .price-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:54px; margin-bottom: 42px;}
     @media(max-width:900px){ .price-grid{grid-template-columns:1fr; display: none;} }
     .price-card{
       background:var(--surface);
@@ -884,7 +889,6 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
 <!-- HEADER -->
 <header class="site">
   <div class="container nav">
-    <!-- Trocar logo para branco -->
     <a href="index.html" class="logo_principal"><img src="assets/img/logo_nath.svg" alt="Nath Nail Art"></a>
     <button class="menu-toggle" aria-label="Abrir menu" onclick="document.getElementById('navlinks').classList.toggle('open')">
       <span></span><span></span><span></span>
@@ -951,8 +955,9 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
     <div>
       <div class="divider"><span></span><em>Sobre</em><span></span></div>
       <h2>Olá, eu sou a <em style="font-style: italic; color: #696FC7;">Nathália</em>.</h2>
-      <p>Há 10 anos transformo o ritual de cuidar das unhas em um momento de pausa, beleza e autoestima. Especialista em esmaltação em gel, alongamento em fibra de vidro e molde F1. pela Academia Nail Pro e especialista em alongamento em fibra de vidro, atendo um número limitado de clientes por dia para entregar uma experiência verdadeiramente boutique.</p>
-      <p>Trabalho apenas com produtos veganos e cruelty-free, em um ambiente impecavelmente higienizado, com café fresco e uma trilha sonora pensada para você relaxar.</p>
+      <p>Bem-vinda(o)! Sou a Nath, manicure com uma década de experiência, e venho transformando o cuidado com as unhas em um momento de autocuidado.</p>
+      <p>Ao longo desses 10 anos, fui me especializando em esmaltação em gel e alongamentos no molde F1 e em fibra de vidro. Busco sempre as tendências do mercado para te entregar atendimentos exclusivos e alcançar resultados que unem saúde, técnica e durabilidade.</p>
+      <p>Navegue pelo site para ver meu portfólio e conhecer um pouco mais sobre o meu trabalho.</p>
       <div class="about-stats">
         <div><div class="n">+4k</div><div class="l">Atendimentos realizados</div></div>
         <div><div class="n">+10</div><div class="l">Anos de carreira</div></div>
@@ -1204,8 +1209,8 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
         </article>
 
         <article class="price-card featured">
-          <span class="tag">Banho de Gel</span>
-          <h3>Reforço & proteção</h3>
+          <span class="tag">Reforço & proteção</span>
+          <h3>Banho de Gel</h3>
           <p>Gel construtor sobre a unha natural — reforço, proteção e acabamento uniforme, sem alongamento. Inclui cutilagem e esmaltação em gel.</p>
           <div class="price-row">
             <span class="currency">por</span>
@@ -1215,8 +1220,8 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
         </article>
 
         <article class="price-card featured">
-          <span class="tag">Alongamento</span>
-          <h3>Quadrada · Redonda</h3>
+          <span class="tag">Quadrada · Redonda</span>
+          <h3>Alongamento</h3>
           <p>Molde F1, fibra de vidro ou tips de gel — você escolhe. Inclui cutilagem e esmaltação em gel.</p>
           <div class="price-row">
             <span class="currency">a partir de</span>
@@ -1226,8 +1231,8 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
         </article>
 
         <article class="price-card featured">
-          <span class="tag">Alongamento premium</span>
-          <h3>Almond · Bailarina</h3>
+          <span class="tag">Almond · Bailarina</span>
+          <h3>Alongamento</h3>
           <p>Formatos alongados com curvatura precisa. Inclui cutilagem e esmaltação em gel.</p>
           <div class="price-row">
             <span class="currency">por</span>
@@ -1237,8 +1242,8 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
         </article>
 
         <article class="price-card featured">
-          <span class="tag">Manutenção</span>
-          <h3>Do alongamento</h3>
+          <span class="tag">Alongamento</span>
+          <h3>Manutenção</h3>
           <p>Remoção parcial, correção da estrutura, nivelamento e novo acabamento. Inclui uma unha de reposição, cutilagem e esmaltação em gel.</p>
           <div class="price-row">
             <span class="currency">por</span>
@@ -1272,7 +1277,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
         </div>
         <div class="atelier-address-text">
           <strong>Nail Art</strong>
-          <p>Rua 910, nº. 360 · Sala 204<br/>Centro · Balneário Camboriú · SC</p>
+          <p>Rua Protásio Boaventua Caetano, nº. 56A · Sala 201<br/>Pioneiros · Balneário Camboriú · SC</p>
         </div>
       </div>
       <div class="atelier-hours">
@@ -1287,12 +1292,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
     </div>
     
     <div class="atelier-visual">
-      <iframe
-        title="Mapa do atelier"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=-48.63873571157456%2C-26.993568024607953%2C-48.6358255147934%2C-26.991419391916537&amp;layer=mapnik&amp;marker=-26.992492518379848%2C-48.63727927207947"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11927.660384478835!2d-48.63547185740442!3d-26.977577566801152!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cb4cb5293063%3A0x8b8b18ed96360926!2sNath%C3%A1lia%20Parteka%E2%80%93%20Manicure%20e%20Unhas%20em%20Gel!5e0!3m2!1spt-BR!2sbr!4v1786406078844!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </div>
   </div>
 </section>
