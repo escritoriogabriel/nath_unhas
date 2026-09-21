@@ -1879,8 +1879,8 @@
   <header class="site">
     <div class="container nav">
       <a href="index.html" class="logo_principal"><img src="assets/img/logo_nath.svg" alt="Nath Nail Art"></a>
-      <button class="menu-toggle" aria-label="Abrir menu"
-        onclick="document.getElementById('navlinks').classList.toggle('open')">
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="navlinks">
         <span></span><span></span><span></span>
       </button>
       <nav class="nav-links" id="navlinks">
@@ -2457,6 +2457,48 @@
         </svg>
       </a>
 
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.getElementById('navlinks');
+
+    const closeMenu = () => {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Abrir menu');
+    };
+
+    const openMenu = () => {
+      navLinks.classList.add('open');
+      menuToggle.setAttribute('aria-expanded', 'true');
+      menuToggle.setAttribute('aria-label', 'Fechar menu');
+    };
+
+    menuToggle.addEventListener('click', () => {
+      if (navLinks.classList.contains('open')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    navLinks.addEventListener('click', (event) => {
+      if (event.target.closest('a')) {
+        closeMenu();
+      }
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+        closeMenu();
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 900) {
+        closeMenu();
+      }
+    });
+  </script>
 </body>
 
 </html>
