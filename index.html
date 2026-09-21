@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nath Nail Art · Balneário Camboriú - SC/SC</title>
-  <meta name="description" content="Nail Art · Balneário Camboriú - SC - SC. Manicure, pedicure spa, esmaltação em gel, alongamento e nail art autoral por Nathália Reis." />
+  <meta name="description"
+    content="Nail Art · Balneário Camboriú - SC - SC. Manicure, pedicure spa, esmaltação em gel, alongamento e nail art autoral por Nathália Reis." />
   <meta name="author" content="Nathália Leal" />
 
   <meta property="og:title" content="Nath Nail Art · Balneário Camboriú - SC" />
@@ -14,7 +16,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
 
   <style>
     :root {
@@ -32,8 +36,16 @@
       --sans: "Inter", system-ui, -apple-system, sans-serif;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: var(--sans);
       color: var(--ink);
@@ -41,12 +53,35 @@
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
-    button { font-family: inherit; cursor: pointer; border: none; background: none; }
 
-    .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 24px; }
-    section { padding: 40px 0; }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
     .eyebrow {
       font-family: var(--sans);
       font-size: 12px;
@@ -57,66 +92,165 @@
       margin-bottom: 18px;
       display: inline-block;
     }
-    h1, h2, h3 { font-family: var(--serif); font-weight: 500; color: var(--ink); letter-spacing: -0.01em; }
-    h2 { font-size: clamp(34px, 4.4vw, 52px); line-height: 1.1; margin-bottom: 18px; }
-    h3 { font-size: 22px; }
-    .lead { font-size: 17px; color: var(--muted); max-width: 560px; }
-    .section-head { text-align: center; margin: 0 auto 60px; max-width: 640px; }
-    .section-head .lead { margin: 0 auto; }
+
+    h1,
+    h2,
+    h3 {
+      font-family: var(--serif);
+      font-weight: 500;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+    }
+
+    h2 {
+      font-size: clamp(34px, 4.4vw, 52px);
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    h3 {
+      font-size: 22px;
+    }
+
+    .lead {
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 560px;
+    }
+
+    .section-head {
+      text-align: center;
+      margin: 0 auto 60px;
+      max-width: 640px;
+    }
+
+    .section-head .lead {
+      margin: 0 auto;
+    }
 
     /* Header */
     header.site {
-      position: sticky; top: 0; z-index: 50;
+      position: sticky;
+      top: 0;
+      z-index: 50;
       background: #2b2740;
       backdrop-filter: saturate(160%) blur(14px);
       -webkit-backdrop-filter: saturate(160%) blur(14px);
       border-bottom: 1px solid var(--line);
     }
-    .nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
-    .brand {
-      font-family: var(--serif); font-size: 24px; font-weight: 600;
-      letter-spacing: -0.01em; display: flex; align-items: center; gap: 10px;
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
     }
+
+    .brand {
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
     .brand-mark {
-      width: 32px; height: 32px; border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
       background: linear-gradient(135deg, #696FC7, var(--lilac));
       display: inline-block;
     }
-    .nav-links { display: flex; gap: 30px; align-items: center; }
-    .nav-links a {font-size: 15px; color: #ffffff; transition: color .2s;
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      align-items: center;
     }
-    .nav-links a:hover { color: #696FC7; }
+
+    .nav-links a {
+      font-size: 15px;
+      color: #ffffff;
+      transition: color .2s;
+    }
+
+    .nav-links a:hover {
+      color: #696FC7;
+    }
+
     .nav-cta {
-      background: var(--ink); color: var(--rose);
-      padding: 10px 20px; border-radius: 999px;
-      font-size: 13px; font-weight: 500; letter-spacing: 0.02em;
+      background: var(--ink);
+      color: var(--rose);
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
       transition: transform .2s, background .2s;
     }
-    .nav-cta:hover { background: #696FC7; transform: translateY(-1px); }
-    .menu-toggle { display: none; }
+
+    .nav-cta:hover {
+      background: #696FC7;
+      transform: translateY(-1px);
+    }
+
+    .menu-toggle {
+      display: none;
+    }
 
     /* Hero */
-    .hero { padding: 80px 0 100px; }
-    .hero-grid {
-      display: grid; grid-template-columns: 1.1fr 1fr; gap: 70px; align-items: center;
+    .hero {
+      padding: 80px 0 100px;
     }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
     .hero h1 {
       font-size: clamp(46px, 6.5vw, 78px);
-      line-height: 1.02; margin-bottom: 24px;
+      line-height: 1.02;
+      margin-bottom: 24px;
     }
-    .hero h1 em { font-style: italic; color: #696FC7; }
-    .hero p { font-size: 18px; color: var(--muted); max-width: 480px; margin-bottom: 36px; }
-    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    .hero h1 em {
+      font-style: italic;
+      color: #696FC7;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 480px;
+      margin-bottom: 36px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
     .btn {
-      display: inline-flex; align-items: center; gap: 10px;
-      padding: 15px 26px; border-radius: 999px;
-      font-size: 14px; font-weight: 500; letter-spacing: 0.02em;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 26px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
       transition: transform .2s, box-shadow .2s, background .2s;
     }
 
-color: #fff;
-box-shadow: var(--shadow-md);
-border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
+    color: #fff;
+    box-shadow: var(--shadow-md);
+    border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
 
 
 
@@ -129,33 +263,73 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       border: 2px solid rgb(206, 206, 206);
       transition: all 0.2s ease-in-out;
     }
+
     .btn:hover {
       box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
     }
+
     .btn:focus {
       outline: none;
       box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
     }
-    .btn-primary { background-color: #d1ffd0; border: 1px solid var(--line); border: 1px solid var(--line);}
+
+    .btn-primary {
+      background-color: #d1ffd0;
+      border: 1px solid var(--line);
+      border: 1px solid var(--line);
+    }
+
     .btn-primary:hover {
       background: linear-gradient(135deg, #25D366 0%, #1ab855 100%);
       color: #fff;
       border-color: transparent;
-      box-shadow: inset 2px 2px 5px rgba(37,211,102,0.3), inset -2px -2px 5px rgba(255,255,255,0.3), 2px 2px 8px rgba(37,211,102,0.4), -2px -2px 8px rgba(255,255,255,0.4);
+      box-shadow: inset 2px 2px 5px rgba(37, 211, 102, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.3), 2px 2px 8px rgba(37, 211, 102, 0.4), -2px -2px 8px rgba(255, 255, 255, 0.4);
     }
-    .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); box-shadow: none; }
-    .btn-ghost:hover { background: var(--lilac); border-color: transparent; }
-    .btn-instagram { background-color: #ffe4d0; border: 1px solid var(--line);}
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      box-shadow: none;
+    }
+
+    .btn-ghost:hover {
+      background: var(--lilac);
+      border-color: transparent;
+    }
+
+    .btn-instagram {
+      background-color: #ffe4d0;
+      border: 1px solid var(--line);
+    }
+
     .btn-instagram:hover {
       background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
       color: #fff;
       border-color: transparent;
-      box-shadow: inset 2px 2px 5px rgba(220,39,67,0.3), inset -2px -2px 5px rgba(255,255,255,0.3), 2px 2px 8px rgba(220,39,67,0.4), -2px -2px 8px rgba(255,255,255,0.4);
+      box-shadow: inset 2px 2px 5px rgba(220, 39, 67, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.3), 2px 2px 8px rgba(220, 39, 67, 0.4), -2px -2px 8px rgba(255, 255, 255, 0.4);
     }
-    .btn-instagram:hover .contact-icon-wrap.insta { background: rgba(255,255,255,0.25); }
-    .btn-services { background: transparent; color: var(--ink); border: 1px solid var(--line); box-shadow: none; }
-    .btn-services:hover { background: var(--lilac); border-color: transparent; }
-    .btn svg { width: 18px; height: 18px; }
+
+    .btn-instagram:hover .contact-icon-wrap.insta {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .btn-services {
+      background: transparent;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      box-shadow: none;
+    }
+
+    .btn-services:hover {
+      background: var(--lilac);
+      border-color: transparent;
+    }
+
+    .btn svg {
+      width: 18px;
+      height: 18px;
+    }
 
     .contact-icon-wrap {
       width: 32px;
@@ -166,39 +340,95 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       justify-content: center;
       flex-shrink: 0;
     }
-    .contact-icon-wrap svg { width: 18px !important; height: 18px !important; }
-    .contact-icon-wrap.green { 
-      background: linear-gradient(135deg, #25D366, #128C7E); 
-      color: white; 
-    }
-    .contact-icon-wrap.insta { 
-      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-      color: white; 
+
+    .contact-icon-wrap svg {
+      width: 18px !important;
+      height: 18px !important;
     }
 
-    .hero-visual { position: relative; }
+    .contact-icon-wrap.green {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      color: white;
+    }
+
+    .contact-icon-wrap.insta {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      color: white;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
     .hero-img {
-      aspect-ratio: 4/5; border-radius: 200px 200px 24px 24px;
-      overflow: hidden; box-shadow: var(--shadow-md);
-    }
-    .hero-img img { width: 100%; height: 100%; object-fit: cover; }
-    .hero-badge {
-      position: absolute; bottom: 30px; left: -30px;
-      background: #fff; border-radius: 18px; padding: 18px 22px;
+      aspect-ratio: 4/5;
+      border-radius: 200px 200px 24px 24px;
+      overflow: hidden;
       box-shadow: var(--shadow-md);
-      display: flex; align-items: center; gap: 14px;
     }
-    .hero-badge { font-family: var(--serif); font-size: 32px; color: #696FC7; line-height: 1; }
-    .hero-badge .lbl { font-size: 16px; color: var(--muted); line-height: 1.3; max-width: 110px; }
+
+    .hero-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-badge {
+      position: absolute;
+      bottom: 30px;
+      left: -30px;
+      background: #fff;
+      border-radius: 18px;
+      padding: 18px 22px;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .hero-badge {
+      font-family: var(--serif);
+      font-size: 32px;
+      color: #696FC7;
+      line-height: 1;
+    }
+
+    .hero-badge .lbl {
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.3;
+      max-width: 110px;
+    }
+
     .hero-blob {
-      position: absolute; top: -20px; right: -30px;
-      width: 160px; height: 160px; border-radius: 50%;
-      background: var(--lilac); z-index: -1; filter: blur(8px); opacity: .9;
+      position: absolute;
+      top: -20px;
+      right: -30px;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: var(--lilac);
+      z-index: -1;
+      filter: blur(8px);
+      opacity: .9;
     }
-    .num { font-size: 45px; }
+
+    .num {
+      font-size: 45px;
+    }
+
     /* Sobre */
-    .about { background: #fff; }
-    .about-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 70px; align-items: center; }
+    .about {
+      background: #fff;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 70px;
+      align-items: center;
+    }
+
     .about-img {
       aspect-ratio: 1/1;
       border-radius: 24px;
@@ -207,6 +437,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       background: #fff;
       margin-right: 22px;
     }
+
     .about-img img {
       width: 100%;
       height: 137%;
@@ -214,105 +445,297 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       display: block;
       border-radius: 24px;
     }
-    .about p { color: var(--muted); margin-bottom: 16px; font-size: 16px; }
-    .about-stats { display: flex; gap: 40px; margin-top: 32px; padding-top: 32px; border-top: 1px solid var(--line); }
-    .about-stats div .n { font-family: var(--serif); font-size: 36px; color: #696FC7; line-height: 1; justify-content: center; display: flex; }
-    .about-stats div .l { font-size: 12px; color: var(--muted); letter-spacing: 0.15em; text-transform: uppercase; margin-top: 6px; }
+
+    .about p {
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+
+    .about-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 32px;
+      padding-top: 32px;
+      border-top: 1px solid var(--line);
+    }
+
+    .about-stats div .n {
+      font-family: var(--serif);
+      font-size: 36px;
+      color: #696FC7;
+      line-height: 1;
+      justify-content: center;
+      display: flex;
+    }
+
+    .about-stats div .l {
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-top: 6px;
+    }
 
     /* Serviços */
-    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
     .service {
-      background: #fff; border-radius: var(--radius); padding: 32px;
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 32px;
       transition: transform .3s, box-shadow .3s;
       border: 1px solid transparent;
     }
-    .service:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--lilac); }
+
+    .service:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--lilac);
+    }
+
     .service-icon {
-      width: 48px; height: 48px; border-radius: 14px;
-      background: var(--lilac); display: flex; align-items: center; justify-content: center;
-      margin-bottom: 22px; color: #696FC7;
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: var(--lilac);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+      color: #696FC7;
     }
-    .service-icon svg { width: 24px; height: 24px; }
-    .service h3 { margin-bottom: 8px; }
-    .service-desc { font-size: 14px; color: var(--muted); margin-bottom: 22px; min-height: 44px; }
+
+    .service-icon svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .service h3 {
+      margin-bottom: 8px;
+    }
+
+    .service-desc {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 22px;
+      min-height: 44px;
+    }
+
     .service-foot {
-      display: flex; justify-content: space-between; align-items: baseline;
-      padding-top: 18px; border-top: 1px dashed var(--line);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-top: 18px;
+      border-top: 1px dashed var(--line);
     }
-    .service-price { font-family: var(--serif); font-size: 26px; color: #696FC7; }
-    .service-time { font-size: 12px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; }
+
+    .service-price {
+      font-family: var(--serif);
+      font-size: 26px;
+      color: #696FC7;
+    }
+
+    .service-time {
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
 
     /* Galeria */
-    .gallery { background: linear-gradient(180deg, var(--rose), #fff); }
-    .gallery-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      grid-auto-rows: 240px; gap: 20px;
+    .gallery {
+      background: linear-gradient(180deg, var(--rose), #fff);
     }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 240px;
+      gap: 20px;
+    }
+
     .gallery-item {
-      overflow: hidden; border-radius: 18px; position: relative;
+      overflow: hidden;
+      border-radius: 18px;
+      position: relative;
       box-shadow: var(--shadow-sm);
     }
+
     .gallery-item img {
-      width: 100%; height: 100%; object-fit: cover;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       transition: transform .6s ease;
     }
-    .gallery-item:hover img { transform: scale(1.06); }
-    .gallery-item.tall { grid-row: span 1; }
-    .gallery-item.wide { grid-column: span 1; }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    .gallery-item.tall {
+      grid-row: span 1;
+    }
+
+    .gallery-item.wide {
+      grid-column: span 1;
+    }
 
     @media screen and (max-width: 900px) {
       .gallery-item {
-      overflow: hidden; border-radius: 18px; position: relative;
-      box-shadow: var(--shadow-sm);
-    }
+        overflow: hidden;
+        border-radius: 18px;
+        position: relative;
+        box-shadow: var(--shadow-sm);
+      }
+
       .gallery-item img {
-      width: 100%; height: 100%; object-fit: cover;
-      transition: transform .6s ease;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform .6s ease;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.06);
+      }
+
+      .gallery-item.tall {
+        display: none;
+      }
+
+      .gallery-item.wide {
+        display: none;
+      }
     }
-      .gallery-item:hover img { transform: scale(1.06); }
-      .gallery-item.tall { display: none; }
-      .gallery-item.wide { display: none; }
-    }
-    
+
 
     /* Depoimentos */
-    .testi { background: var(--lilac); }
-    .testi .section-head .eyebrow { color: var(--indigo-deep); }
-    .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    .testi-card {
-      background: #fff; border-radius: var(--radius); padding: 32px;
-      display: flex; flex-direction: column; gap: 18px;
+    .testi {
+      background: var(--lilac);
     }
-    .stars { display: flex; gap: 3px; color: #696FC7; }
-    .stars svg { width: 16px; height: 16px; }
-    .testi-quote { font-family: var(--serif); font-size: 19px; line-height: 1.45; font-style: italic; color: var(--ink); }
-    .testi-author { display: flex; align-items: center; gap: 12px; margin-top: auto; padding-top: 18px; border-top: 1px solid var(--line); }
-    .avatar { width: 44px; height: 44px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
-    .avatar img { width: 100%; height: 100%; object-fit: cover; }
-    .testi-author .name { font-weight: 500; font-size: 14px; }
-    .testi-author .meta { font-size: 12px; color: var(--muted); }
+
+    .testi .section-head .eyebrow {
+      color: var(--indigo-deep);
+    }
+
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .testi-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .stars {
+      display: flex;
+      gap: 3px;
+      color: #696FC7;
+    }
+
+    .stars svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .testi-quote {
+      font-family: var(--serif);
+      font-size: 19px;
+      line-height: 1.45;
+      font-style: italic;
+      color: var(--ink);
+    }
+
+    .testi-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: auto;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .testi-author .name {
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .testi-author .meta {
+      font-size: 12px;
+      color: var(--muted);
+    }
 
     /* FAQ */
-    .faq-wrap { max-width: 760px; margin: 0 auto; }
+    .faq-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
     details.faq-item {
-      background: #fff; border-radius: 16px; padding: 0;
-      margin-bottom: 12px; border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 16px;
+      padding: 0;
+      margin-bottom: 12px;
+      border: 1px solid var(--line);
       overflow: hidden;
     }
+
     details.faq-item summary {
-      list-style: none; cursor: pointer;
+      list-style: none;
+      cursor: pointer;
       padding: 22px 28px;
-      display: flex; justify-content: space-between; align-items: center;
-      font-weight: 500; font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      font-size: 16px;
     }
-    details.faq-item summary::-webkit-details-marker { display: none; }
+
+    details.faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
     details.faq-item summary::after {
-      content: "+"; font-size: 24px; color: #696FC7; font-weight: 300;
+      content: "+";
+      font-size: 24px;
+      color: #696FC7;
+      font-weight: 300;
       transition: transform .3s;
     }
-    details.faq-item[open] summary::after { content: "−"; }
+
+    details.faq-item[open] summary::after {
+      content: "−";
+    }
+
     details.faq-item .faq-body {
-      padding: 0 28px 24px; color: var(--muted); font-size: 15px;
+      padding: 0 28px 24px;
+      color: var(--muted);
+      font-size: 15px;
     }
 
     /* Atelier Section Refactored */
@@ -320,6 +743,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       background: #fff;
       padding: 100px 0;
     }
+
     .atelier-container {
       max-width: 1180px;
       margin: 0 auto;
@@ -329,12 +753,14 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       gap: 60px;
       align-items: center;
     }
+
     .atelier-content h2 {
       font-family: var(--serif);
       font-size: clamp(32px, 4vw, 48px);
       color: var(--ink);
       margin-bottom: 24px;
     }
+
     .atelier-hours {
       margin: 32px 0;
       background: var(--rose);
@@ -342,6 +768,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       border-radius: 24px;
       border: 1px solid var(--line);
     }
+
     .atelier-hours h3 {
       font-size: 18px;
       text-transform: uppercase;
@@ -349,9 +776,11 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       color: #696FC7;
       margin-bottom: 20px;
     }
+
     .atelier-hours ul {
       list-style: none;
     }
+
     .atelier-hours li {
       display: flex;
       justify-content: space-between;
@@ -359,13 +788,18 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       border-bottom: 1px solid rgba(104, 127, 229, 0.1);
       font-size: 15px;
     }
-    .atelier-hours li:last-child { border-bottom: none; }
+
+    .atelier-hours li:last-child {
+      border-bottom: none;
+    }
+
     .atelier-address {
       display: flex;
       gap: 16px;
       align-items: flex-start;
       margin-top: 32px;
     }
+
     .atelier-address-icon {
       width: 44px;
       height: 44px;
@@ -377,8 +811,19 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       color: #696FC7;
       flex-shrink: 0;
     }
-    .atelier-address-text strong { display: block; margin-bottom: 4px; font-size: 17px; }
-    .atelier-address-text p { color: var(--muted); font-size: 15px; line-height: 1.5; }
+
+    .atelier-address-text strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 17px;
+    }
+
+    .atelier-address-text p {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
     .atelier-visual {
       position: relative;
       border-radius: 32px;
@@ -386,14 +831,22 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       box-shadow: var(--shadow-md);
       height: 500px;
     }
+
     .atelier-visual iframe {
       width: 100%;
       height: 100%;
       border: 0;
     }
+
     @media (max-width: 900px) {
-      .atelier-container { grid-template-columns: 1fr; gap: 40px; }
-      .atelier-visual { height: 90%; }
+      .atelier-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .atelier-visual {
+        height: 90%;
+      }
     }
 
     /* Quick CTA */
@@ -405,25 +858,32 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       overflow: hidden;
       margin: 4%;
     }
+
     .quick-cta::before {
       content: '';
       position: absolute;
-      top: -50px; left: 50%;
+      top: -50px;
+      left: 50%;
       transform: translateX(-50%);
-      width: 600px; height: 200px;
+      width: 600px;
+      height: 200px;
       border-radius: 50%;
-      background: rgba(255,255,255,0.06);
+      background: rgba(255, 255, 255, 0.06);
       pointer-events: none;
     }
+
     .quick-cta::after {
       content: '';
       position: absolute;
-      bottom: -40px; right: -40px;
-      width: 240px; height: 240px;
+      bottom: -40px;
+      right: -40px;
+      width: 240px;
+      height: 240px;
       border-radius: 50%;
-      background: rgba(235,214,251,0.12);
+      background: rgba(235, 214, 251, 0.12);
       pointer-events: none;
     }
+
     .quick-cta .container {
       display: flex;
       flex-direction: column;
@@ -432,14 +892,16 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       position: relative;
       z-index: 1;
     }
+
     .quick-cta .cta-eyebrow {
       font-size: 11px;
       letter-spacing: 0.28em;
       text-transform: uppercase;
-      color: rgba(235,214,251,0.8);
+      color: rgba(235, 214, 251, 0.8);
       font-weight: 500;
       margin-bottom: 4px;
     }
+
     .quick-cta h3 {
       font-family: var(--serif);
       font-size: clamp(26px, 3.5vw, 38px);
@@ -448,30 +910,36 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       line-height: 1.2;
       margin-bottom: 6px;
     }
+
     .quick-cta .cta-sub {
       font-size: 15px;
-      color: rgba(253,244,245,0.72);
+      color: rgba(253, 244, 245, 0.72);
       max-width: 420px;
       margin-bottom: 12px;
     }
+
     .quick-cta .hero-actions {
       justify-content: center;
     }
+
     .quick-cta .btn-primary {
-      background: rgba(255,255,255,0.12);
+      background: rgba(255, 255, 255, 0.12);
       color: #ffffff;
       border-color: transparent;
     }
+
     .quick-cta .btn-primary:hover {
       background: #25D366;
       color: #fff;
-      box-shadow: 0 12px 28px rgba(37,211,102,0.45);
+      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.45);
     }
+
     .quick-cta .btn-instagram {
-      background: rgba(255,255,255,0.12);
+      background: rgba(255, 255, 255, 0.12);
       color: #fff;
-      border-color: rgba(255,255,255,0.3);
+      border-color: rgba(255, 255, 255, 0.3);
     }
+
     .quick-cta .btn-instagram:hover {
       background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
       border-color: transparent;
@@ -485,24 +953,31 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       position: relative;
       overflow: hidden;
     }
+
     .courses-section::before {
       content: '';
       position: absolute;
-      top: -80px; right: -80px;
-      width: 420px; height: 420px;
+      top: -80px;
+      right: -80px;
+      width: 420px;
+      height: 420px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(235,214,251,0.18) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(235, 214, 251, 0.18) 0%, transparent 70%);
       pointer-events: none;
     }
+
     .courses-section::after {
       content: '';
       position: absolute;
-      bottom: -60px; left: -60px;
-      width: 320px; height: 320px;
+      bottom: -60px;
+      left: -60px;
+      width: 320px;
+      height: 320px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(104,127,229,0.22) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(104, 127, 229, 0.22) 0%, transparent 70%);
       pointer-events: none;
     }
+
     .courses-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -511,10 +986,12 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       position: relative;
       z-index: 1;
     }
+
     .courses-content .eyebrow {
       color: var(--lilac);
       opacity: 0.85;
     }
+
     .courses-content h2 {
       font-family: var(--serif);
       font-size: clamp(34px, 5vw, 56px);
@@ -522,22 +999,28 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       margin-bottom: 20px;
       color: #fff;
     }
-    .courses-content h2 em { color: var(--lilac); }
-    .courses-content > p {
+
+    .courses-content h2 em {
+      color: var(--lilac);
+    }
+
+    .courses-content>p {
       font-size: 17px;
-      color: rgba(253,244,245,0.72);
+      color: rgba(253, 244, 245, 0.72);
       margin-bottom: 36px;
       line-height: 1.7;
     }
+
     .courses-badge-row {
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
       margin-bottom: 32px;
     }
+
     .courses-badge {
-      background: rgba(235,214,251,0.15);
-      border: 1px solid rgba(235,214,251,0.3);
+      background: rgba(235, 214, 251, 0.15);
+      border: 1px solid rgba(235, 214, 251, 0.3);
       color: var(--lilac);
       padding: 6px 16px;
       border-radius: 999px;
@@ -545,72 +1028,107 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       font-weight: 500;
       letter-spacing: 0.06em;
     }
+
     .courses-features {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 14px;
       margin-bottom: 40px;
     }
+
     .course-feat {
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.12);
+      background: rgb(237 237 237 / 24%);;
+      border: 1px solid rgba(255, 255, 255, 0.12);
       padding: 14px 16px;
       border-radius: 14px;
       font-size: 14px;
       font-weight: 500;
-      color: rgba(253,244,245,0.9);
+      color: rgba(253, 244, 245, 0.9);
       display: flex;
       align-items: center;
       gap: 10px;
       transition: background 0.2s;
     }
-    .course-feat:hover { background: rgba(255,255,255,0.13); }
-    .course-feat svg { color: var(--lilac); flex-shrink: 0; }
+
+    .course-feat:hover {
+      background: rgba(255, 255, 255, 0.13);
+    }
+
+    .course-feat svg {
+      color: var(--lilac);
+      flex-shrink: 0;
+    }
+
     .courses-cta-row {
       display: flex;
       gap: 14px;
       flex-wrap: wrap;
       align-items: center;
     }
+
     .btn-course-primary {
-      display: inline-flex; align-items: center; gap: 10px;
-      padding: 16px 30px; border-radius: 999px;
-      font-size: 14px; font-weight: 600; letter-spacing: 0.03em;
-      background: var(--lilac); color: var(--ink);
-      border: none; cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 30px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      background: var(--lilac);
+      color: var(--ink);
+      border: none;
+      cursor: pointer;
       transition: transform .2s, box-shadow .2s, background .2s;
-      box-shadow: 0 8px 24px rgba(235,214,251,0.35);
+      box-shadow: 0 8px 24px rgba(235, 214, 251, 0.35);
       text-decoration: none;
     }
+
     .btn-course-primary:hover {
       background: #fff;
       transform: translateY(-2px);
-      box-shadow: 0 14px 32px rgba(235,214,251,0.45);
+      box-shadow: 0 14px 32px rgba(235, 214, 251, 0.45);
     }
+
     .btn-course-ghost {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 16px 28px; border-radius: 999px;
-      font-size: 14px; font-weight: 500;
-      background: transparent; color: rgba(253,244,245,0.85);
-      border: 1px solid rgba(253,244,245,0.25); cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 16px 28px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 500;
+      background: transparent;
+      color: rgba(253, 244, 245, 0.85);
+      border: 1px solid rgba(253, 244, 245, 0.25);
+      cursor: pointer;
       transition: background .2s, border-color .2s, color .2s;
       text-decoration: none;
     }
+
     .btn-course-ghost:hover {
-      background: rgba(255,255,255,0.1);
-      border-color: rgba(253,244,245,0.5);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(253, 244, 245, 0.5);
       color: #fff;
     }
+
     .courses-img-wrap {
       position: relative;
     }
+
     .courses-img {
       border-radius: 40px;
       overflow: hidden;
-      box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
       aspect-ratio: 4/5;
     }
-    .courses-img img { width: 100%; height: 100%; object-fit: cover; }
+
+    .courses-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     .courses-img-badge {
       position: absolute;
       bottom: 28px;
@@ -618,10 +1136,11 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       background: #fff;
       border-radius: 20px;
       padding: 18px 22px;
-      box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
       text-align: center;
       min-width: 130px;
     }
+
     .courses-img-badge .badge-num {
       font-family: var(--serif);
       font-size: 36px;
@@ -629,6 +1148,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       line-height: 1;
       font-weight: 600;
     }
+
     .courses-img-badge .badge-lbl {
       font-size: 11px;
       color: var(--muted);
@@ -636,131 +1156,363 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       letter-spacing: 0.12em;
       margin-top: 4px;
     }
+
     .courses-divider {
-      width: 48px; height: 3px;
+      width: 48px;
+      height: 3px;
       background: linear-gradient(90deg, var(--lilac), #696FC7);
       border-radius: 2px;
       margin-bottom: 28px;
     }
+
     @media (max-width: 900px) {
-      .courses-grid { grid-template-columns: 1fr; gap: 48px; }
-      .courses-img-wrap { order: -1; }
-      .courses-img-badge { right: 10px; }
+      .courses-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .courses-img-wrap {
+        order: -1;
+      }
+
+      .courses-img-badge {
+        right: 10px;
+      }
     }
 
     .final-cta {
-      background: var(--ink); color: var(--rose);
+      background: var(--ink);
+      color: var(--rose);
       text-align: center;
     }
-    .final-cta h2 { color: var(--rose); }
-    .final-cta h2 em { font-style: italic; color: var(--lilac); }
-    .final-cta p { color: rgba(253, 244, 245, 0.7); max-width: 480px; margin: 0 auto 32px; }
-    .final-cta .btn-primary { background: var(--lilac); color: var(--ink); }
-    .final-cta .btn-primary:hover { background: #fff; }
+
+    .final-cta h2 {
+      color: var(--rose);
+    }
+
+    .final-cta h2 em {
+      font-style: italic;
+      color: var(--lilac);
+    }
+
+    .final-cta p {
+      color: rgba(253, 244, 245, 0.7);
+      max-width: 480px;
+      margin: 0 auto 32px;
+    }
+
+    .final-cta .btn-primary {
+      background: var(--lilac);
+      color: var(--ink);
+    }
+
+    .final-cta .btn-primary:hover {
+      background: #fff;
+    }
 
     /* Footer */
     footer.site {
-      background: var(--ink); color: rgba(253, 244, 245, 0.55);
-      padding: 40px 0; font-size: 13px;
+      background: var(--ink);
+      color: rgba(253, 244, 245, 0.55);
+      padding: 40px 0;
+      font-size: 13px;
       border-top: 1px solid rgba(253, 244, 245, 0.08);
     }
-    footer .row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
-    footer .socials { display: flex; gap: 14px; }
+
+    footer .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    footer .socials {
+      display: flex;
+      gap: 14px;
+    }
+
     footer .socials a {
-      width: 36px; height: 36px; border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
       background: rgba(235, 214, 251, 0.1);
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       transition: background .2s, color .2s;
     }
-    footer .socials a:hover { background: var(--lilac); color: var(--ink); }
-    footer .socials svg { width: 16px; height: 16px; }
+
+    footer .socials a:hover {
+      background: var(--lilac);
+      color: var(--ink);
+    }
+
+    footer .socials svg {
+      width: 16px;
+      height: 16px;
+    }
 
     /* WhatsApp flutuante */
     .wa-float {
-      position: fixed; bottom: 24px; right: 24px; z-index: 60;
-      width: 58px; height: 58px; border-radius: 50%;
-      background: #25D366; color: #fff;
-      display: flex; align-items: center; justify-content: center;
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 60;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       box-shadow: 0 12px 30px rgba(37, 211, 102, 0.4);
       transition: transform .2s;
     }
-    .wa-float:hover { transform: scale(1.08); }
-    .wa-float svg { width: 28px; height: 28px; }
+
+    .wa-float:hover {
+      transform: scale(1.08);
+    }
+
+    .wa-float svg {
+      width: 28px;
+      height: 28px;
+    }
 
     /* Responsivo */
     @media (max-width: 900px) {
-      section { padding: 30px 0; }
-      .hero { padding: 50px 0 70px; }
-      .hero-grid, .about-grid, .loc-grid { grid-template-columns: 1fr; gap: 50px; }
-      .hero-visual { order: -1; max-width: 380px; margin: 0 auto; }
-      .hero-badge { left: 10px; bottom: 10px; }
-      .services-grid { grid-template-columns: repeat(2, 1fr); }
-      .testi-grid { grid-template-columns: 1fr; }
-      .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 200px; }
-      .gallery-item.wide { grid-column: span 1; }
-      .gallery-item.tall { grid-row: span 1; }
+      section {
+        padding: 30px 0;
+      }
+
+      .hero {
+        padding: 50px 0 70px;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .loc-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .hero-visual {
+        order: -1;
+        max-width: 380px;
+        margin: 0 auto;
+      }
+
+      .hero-badge {
+        left: 10px;
+        bottom: 10px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .testi-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+      }
+
+      .gallery-item.wide {
+        grid-column: span 1;
+      }
+
+      .gallery-item.tall {
+        grid-row: span 1;
+      }
 
       .menu-toggle {
-        display: flex; flex-direction: column; gap: 5px;
-        padding: 8px; background: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 8px;
+        background: none;
         padding-right: 30px;
       }
-      .menu-toggle span { width: 22px; height: 1.5px; background: var(--ink); transition: .3s; }
+
+      .menu-toggle span {
+        width: 22px;
+        height: 1.5px;
+        background: var(--ink);
+        transition: .3s;
+      }
+
       .nav-links {
-        position: absolute; top: 100%; left: 0; right: 0;
-        flex-direction: column; gap: 0; padding: 12px 24px 24px;
-        background: var(--rose); border-bottom: 1px solid var(--line);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        padding: 12px 24px 24px;
+        background: var(--rose);
+        border-bottom: 1px solid var(--line);
         display: none;
       }
-      .nav-links.open { display: flex; padding:12px 24px 24px; text-align: left; font-size:15px;}
-      .nav-links a, .nav-links { padding: 12px 0; width: 100%; text-align: left; justify-content: center;}
-      .nav-cta { border-radius: 12px; text-align: center !important; }
-      .header-btn-primary { display: inline-flex; align-items: center; gap: 10px; padding: 15px 26px; border-radius: 999px; font-size: 14px; font-weight: 500; letter-spacing: 0.02em; background: var(--lilac); color: var(--ink); border: none; cursor: pointer;
-    transition: transform .2s, box-shadow .2s, background .2s; }
+
+      .nav-links.open {
+        display: flex;
+        padding: 12px 24px 24px;
+        text-align: left;
+        font-size: 15px;
+        background: #2b2740;
+      }
+
+      .nav-links a,
+      .nav-links {
+        padding: 12px 0;
+        width: 100%;
+        text-align: left;
+        justify-content: center;
+      }
+
+      .nav-cta {
+        border-radius: 12px;
+        text-align: center !important;
+      }
+
+      .header-btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 26px;
+        border-radius: 999px;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        background: var(--lilac);
+        color: var(--ink);
+        border: none;
+        cursor: pointer;
+        transition: transform .2s, box-shadow .2s, background .2s;
+      }
     }
+
     @media (max-width: 560px) {
-      .services-grid { grid-template-columns: 1fr; }
-      .about-stats { gap: 24px; flex-wrap: wrap; }
-      .gallery-grid { grid-template-columns: 1fr; }
-      .gallery-item.wide { grid-column: span 1; }
-      footer .row { justify-content: center; text-align: center; }
-      
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-stats {
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item.wide {
+        grid-column: span 1;
+      }
+
+      footer .row {
+        justify-content: center;
+        text-align: center;
+      }
+
       /* MOBILE: Hero - Texto à esquerda, foto reduzida */
-      .hero h1 { font-size: 28px; margin-bottom: 16px; }
-      .hero-visual { max-width: 100%; display: none }
-      .hero-img { aspect-ratio: 16/9; border-radius: 16px; }
-      
+      .hero h1 {
+        font-size: 28px;
+        margin-bottom: 16px;
+      }
+
+      .hero-visual {
+        max-width: 100%;
+        display: none
+      }
+
+      .hero-img {
+        aspect-ratio: 16/9;
+        border-radius: 16px;
+      }
+
       /* MOBILE: Badge reduzido */
-      .hero-badge { padding: 8px 9px; font-size: 10px; left: 5px; bottom: 5px; }
-      .hero-badge { font-size: 18px; }
-      .num { font-size: 30px; }
-      .hero-badge .lbl { font-size: 16px; max-width: 80px; }
-      
-      /* MOBILE: Sobre - Imagem reduzida */
-      .about-img { aspect-ratio: 16/9; }
-      
+      .hero-badge {
+        padding: 8px 9px;
+        font-size: 10px;
+        left: 5px;
+        bottom: 5px;
+      }
+
+      .hero-badge {
+        font-size: 18px;
+      }
+
+      .num {
+        font-size: 30px;
+      }
+
+      .hero-badge .lbl {
+        font-size: 16px;
+        max-width: 80px;
+      }
+
+
       /* MOBILE: Estatísticas em lista horizontal compacta */
-      .about-stats { flex-direction: row; gap: 12px; padding-top: 20px; margin-top: 20px; justify-content: space-around; }
-      .about-stats div { flex: 1; text-align: center; }
-      .about-stats div .n { font-size: 20px; }
-      .about-stats div .l { font-size: 9px; }
-      
+      .about-stats {
+        flex-direction: row;
+        gap: 12px;
+        padding-top: 20px;
+        margin-top: 20px;
+        justify-content: space-around;
+      }
+
+      .about-stats div {
+        flex: 1;
+        text-align: center;
+      }
+
+      .about-stats div .n {
+        font-size: 20px;
+      }
+
+      .about-stats div .l {
+        font-size: 9px;
+      }
+
       /* MOBILE: Galeria em 2 colunas */
-      .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
-      
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 160px;
+      }
+
       /* MOBILE: Ocultar depoimentos */
-      .testi { display: none; }
-      
+      .testi {
+        display: none;
+      }
+
       /* MOBILE: Secao de Cursos sem foto */
-      .courses-grid { grid-template-columns: 1fr; }
-      .courses-img-wrap { display: none; }
-      
+      .courses-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .courses-img-wrap {
+        display: none;
+      }
+
       /* MOBILE: Mover Formacao para cima do Badge */
-      .courses-eyebrow { order: -2; }
-      .courses-divider { order: -1; }
-      
+      .courses-eyebrow {
+        order: -2;
+      }
+
+      .courses-divider {
+        order: -1;
+      }
+
       /* MOBILE: Servicos em tabela delicada */
-      .price-grid { display: none; }
+      .price-grid {
+        display: none;
+      }
+
       .mobile-price-table {
         display: block !important;
         margin-top: 32px;
@@ -770,6 +1522,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
         box-shadow: var(--shadow-sm);
         border: 1px solid var(--line);
       }
+
       .mobile-price-row {
         display: flex;
         justify-content: space-between;
@@ -777,30 +1530,90 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
         padding: 14px 0;
         border-bottom: 1px solid rgba(104, 127, 229, 0.08);
       }
-      .mobile-price-row:last-child { border-bottom: none; }
-      .mobile-price-info { display: flex; flex-direction: column; gap: 2px; }
-      .mobile-price-name { font-family: var(--serif); font-size: 15px; font-weight: 500; color: var(--ink); }
-      .mobile-price-time { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
-      .mobile-price-value { font-family: var(--serif); font-size: 21px; font-weight: bold; color: var(--indigo-deep); }
-      .mobile-price-tag { 
-        font-size: 9px; text-transform: uppercase; letter-spacing: 0.1em; 
-        color: #696FC7; background: rgba(104, 127, 229, 0.08);
-        padding: 2px 8px; border-radius: 999px; width: fit-content; margin-bottom: 4px;
+
+      .mobile-price-row:last-child {
+        border-bottom: none;
       }
-      
+
+      .mobile-price-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .mobile-price-name {
+        font-family: var(--serif);
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--ink);
+      }
+
+      .mobile-price-time {
+        font-size: 11px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .mobile-price-value {
+        font-family: var(--serif);
+        font-size: 21px;
+        font-weight: bold;
+        color: var(--indigo-deep);
+      }
+
+      .mobile-price-tag {
+        font-size: 9px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #696FC7;
+        background: rgba(104, 127, 229, 0.08);
+        padding: 2px 8px;
+        border-radius: 999px;
+        width: fit-content;
+        margin-bottom: 4px;
+      }
+
       /* MOBILE: Quick-CTA com margem reduzida */
-      .quick-cta { padding: 24px 0; margin: 20px 0; border-radius: 20px; }
-      .quick-cta .container { padding: 0 16px; }
-      .quick-cta h3 { font-size: 18px; margin-bottom: 12px; }
-      .quick-cta .cta-sub { font-size: 14px; margin-bottom: 16px; }
-      
+      .quick-cta {
+        padding: 24px 0;
+        margin: 20px 0;
+        border-radius: 20px;
+      }
+
+      .quick-cta .container {
+        padding: 0 16px;
+      }
+
+      .quick-cta h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+      }
+
+      .quick-cta .cta-sub {
+        font-size: 14px;
+        margin-bottom: 16px;
+      }
+
       /* MOBILE: Horarios e mapa reduzidos */
-      .atelier-section { padding: 40px 0; }
-      .atelier-hours h3 { font-size: 16px; }
-      .atelier-hours ul li { font-size: 13px; padding: 6px 0; }
-      .atelier-visual iframe { height: 250px; }
+      .atelier-section {
+        padding: 40px 0;
+      }
+
+      .atelier-hours h3 {
+        font-size: 16px;
+      }
+
+      .atelier-hours ul li {
+        font-size: 13px;
+        padding: 6px 0;
+      }
+
+      .atelier-visual iframe {
+        height: 250px;
+      }
     }
-  
+
     .logo_principal {
       display: flex;
       align-items: center;
@@ -808,6 +1621,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       max-width: 15%;
       padding-left: 25px;
     }
+
     .logo_principal img {
       display: block;
       width: 100%;
@@ -815,7 +1629,10 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
     }
 
     @media (max-width: 900px) {
-      .logo_principal { max-width: 30%; padding-left: 30px; }
+      .logo_principal {
+        max-width: 30%;
+        padding-left: 30px;
+      }
     }
 
     .contact-icon-wrap {
@@ -828,11 +1645,15 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       flex-shrink: 0;
       font-size: 1.15rem;
     }
-    .contact-icon-wrap.green { background: linear-gradient(135deg, #25D366, #1ab855); color: white; }
+
+    .contact-icon-wrap.green {
+      background: linear-gradient(135deg, #25D366, #1ab855);
+      color: white;
+    }
 
     .contact-info-card {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 14px;
       padding: 18px 20px;
       display: flex;
@@ -842,318 +1663,430 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       text-decoration: none;
       color: inherit;
       backdrop-filter: blur(4px);
-  }
-  /* SERVICES */
-    .services-section{
-      background:linear-gradient(180deg, transparent, rgba(235,214,251,.35), transparent);
     }
-    .price-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:54px; margin-bottom: 42px;}
-    @media(max-width:900px){ .price-grid{grid-template-columns:1fr; display: none;} }
-    .price-card{
-      background:var(--surface);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      padding:34px 30px;
-      box-shadow:var(--shadow-sm);
-      transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-      position:relative; overflow:hidden;
-    }
-    .price-card::before{
-      content:""; position:absolute; inset:0 0 auto 0; height:3px;
-      background:linear-gradient(90deg, #696FC7, var(--lilac));
-      opacity:0; transition:opacity .25s ease;
-    }
-    .price-card:hover{transform:translateY(-4px); box-shadow:var(--shadow-md); border-color:transparent}
-    .price-card:hover::before{opacity:1}
-    .price-card .tag{
-      display:inline-block; font-size:11px; letter-spacing:.22em; text-transform:uppercase;
-      color:var(--indigo-deep); background:var(--lilac-soft);
-      padding:6px 12px; border-radius:999px;
-    }
-    .price-card h3{
-      font-family:'Lora',serif; font-size:28px; font-weight:500;
-      margin:18px 0 10px; color:var(--ink);
-    }
-    .price-card p{color:var(--muted); font-size:14.5px; min-height:84px}
-    .price-row{
-      display:flex; align-items:baseline; gap:8px; margin-top:18px;
-      padding-top:20px; border-top:1px solid var(--line);
-    }
-    .price-row .currency{font-size:13px; color:var(--muted); letter-spacing:.16em; text-transform:uppercase}
-    .price-row .value{
-      font-family:'Lora',serif; font-weight:600;
-      font-size:46px; line-height:1; color:var(--indigo-deep);
-      letter-spacing:-1px;
-    }
-    .price-row .value .cents{font-size:18px; vertical-align:top; margin-left:4px; color:var(--ink-soft); font-weight:500}
-    .price-card .meta{font-size:12px; color:var(--muted); margin-top:10px; letter-spacing:.04em}
-    .price-card.featured{background:linear-gradient(180deg, #fff, var(--rose)); border-color:transparent}
-    .price-card.featured::before{opacity:1}
-  .center{text-align:center}
-    /* SECTION DIVIDER */
-    .divider{display:flex; align-items:center; gap:15px; justify-content:center; color:var(--indigo-deep); margin-bottom:6px}
-    .divider span{height:1px; width:40px; background:#696FC7}
-    .divider em{font-family:'Lora',serif; font-style:italic; font-size:20px}
 
+    /* SERVICES */
+    .services-section {
+      background: linear-gradient(180deg, transparent, rgba(235, 214, 251, .35), transparent);
+    }
+
+    .price-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 54px;
+      margin-bottom: 42px;
+    }
+
+    @media(max-width:900px) {
+      .price-grid {
+        grid-template-columns: 1fr;
+        display: none;
+      }
+    }
+
+    .price-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 34px 30px;
+      box-shadow: var(--shadow-sm);
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .price-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 3px;
+      background: linear-gradient(90deg, #696FC7, var(--lilac));
+      opacity: 0;
+      transition: opacity .25s ease;
+    }
+
+    .price-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: transparent
+    }
+
+    .price-card:hover::before {
+      opacity: 1
+    }
+
+    .price-card .tag {
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--indigo-deep);
+      background: var(--lilac-soft);
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+
+    .price-card h3 {
+      font-family: 'Lora', serif;
+      font-size: 28px;
+      font-weight: 500;
+      margin: 18px 0 10px;
+      color: var(--ink);
+    }
+
+    .price-card p {
+      color: var(--muted);
+      font-size: 14.5px;
+      min-height: 84px
+    }
+
+    .price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-top: 18px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    .price-row .currency {
+      font-size: 13px;
+      color: var(--muted);
+      letter-spacing: .16em;
+      text-transform: uppercase
+    }
+
+    .price-row .value {
+      font-family: 'Lora', serif;
+      font-weight: 600;
+      font-size: 46px;
+      line-height: 1;
+      color: var(--indigo-deep);
+      letter-spacing: -1px;
+    }
+
+    .price-row .value .cents {
+      font-size: 18px;
+      vertical-align: top;
+      margin-left: 4px;
+      color: var(--ink-soft);
+      font-weight: 500
+    }
+
+    .price-card .meta {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 10px;
+      letter-spacing: .04em
+    }
+
+    .price-card.featured {
+      background: linear-gradient(180deg, #fff, var(--rose));
+      border-color: transparent
+    }
+
+    .price-card.featured::before {
+      opacity: 1
+    }
+
+    .center {
+      text-align: center
+    }
+
+    /* SECTION DIVIDER */
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      justify-content: center;
+      color: var(--indigo-deep);
+      margin-bottom: 6px
+    }
+
+    .divider span {
+      height: 1px;
+      width: 40px;
+      background: #696FC7
+    }
+
+    .divider em {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 20px
+    }
   </style>
 </head>
+
 <body>
 
-<!-- HEADER -->
-<header class="site">
-  <div class="container nav">
-    <a href="index.html" class="logo_principal"><img src="assets/img/logo_nath.svg" alt="Nath Nail Art"></a>
-    <button class="menu-toggle" aria-label="Abrir menu" onclick="document.getElementById('navlinks').classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="nav-links" id="navlinks">
-      
-      <a href="#cursos">Cursos</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#depoimentos">Depoimentos</a>
-      <a class="header-btn-primary" href="https://wa.me/5547997041491?text=Ol%C3%A1%20Nathália%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." style="display: inline-flex; align-items: center;    gap: 10px;    padding: 15px 26px;    border-radius: 999px;    font-size: 14px;    font-weight: 500;    letter-spacing: 0.02em;    transition: transform .2s, box-shadow .2s, background .2s;    background: linear-gradient(134deg, #25D366 0%, #1ab855 100%); color: white;">
+  <!-- HEADER -->
+  <header class="site">
+    <div class="container nav">
+      <a href="index.html" class="logo_principal"><img src="assets/img/logo_nath.svg" alt="Nath Nail Art"></a>
+      <button class="menu-toggle" aria-label="Abrir menu"
+        onclick="document.getElementById('navlinks').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navlinks">
+
+        <a href="#cursos">Cursos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a class="header-btn-primary"
+          href="https://wa.me/5547997041491?text=Ol%C3%A1%20Nathália%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+          style="display: inline-flex; align-items: center;    gap: 10px;    padding: 15px 26px;    border-radius: 999px;    font-size: 14px;    font-weight: 500;    letter-spacing: 0.02em;    transition: transform .2s, box-shadow .2s, background .2s;    background: linear-gradient(134deg, #25D366 0%, #1ab855 100%); color: white;">
           <img src="assets/img/whatsapp.svg" alt="WhatsApp" style="width: 20px; height: 20px;" />
           Agendar pelo WhatsApp
         </a>
-    </nav>
-  </div>
-</header>
-
-<a id="top"></a>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <span class="eyebrow">Nail Art · Balneário Camboriú - SC</span>
-      <h1>Unhas que contam <em><strong>histórias</strong></em>.</h1>
-      <p>Atendimento exclusivo com técnica e arte que se encontram para realçar sua melhor versão.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="https://wa.me/5547997041491?text=Ol%C3%A1%20Nathália%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.">
-          <img src="assets/img/whatsapp.svg" alt="WhatsApp" style="width: 20px; height: 20px;" />
-          Agendar pelo WhatsApp
-        </a>
-        <a class="btn btn-instagram" href="https://www.instagram.com/nNathálialeal/" target="_blank" rel="noopener">
-          <img src="assets/img/instagram.svg" alt="Instagram" style="width: 20px; height: 20px;" />
-          Ver no Instagram
-        </a>
-        <a class="btn btn-services" href="#servicos">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
-          Ver serviços
-        </a>
-
-      </div>
+      </nav>
     </div>
-    <div class="hero-visual">
-      <div class="hero-blob" aria-hidden="true"></div>
-      <div class="hero-img">
-        <img src="assets/img/principal.jpeg" alt="Mãos com nail art delicada em tons rosé e lavanda" />
-      </div>
-      <div class="hero-badge">
-        <span class="num">+<strong>10</strong></span>
-        <span class="lbl">anos cuidando das suas mãos com carinho</span>
-      </div>
-    </div>
-  </div>
-</section>
+  </header>
 
-<!-- SOBRE -->
-<section class="about" id="sobre">
-  <div class="container about-grid">
-    <div class="about-img">
-      <img src="assets/img/quem_sou_eu2.jpeg" alt="Retrato de Nathália Reis, nail designer" />
-    </div>
-    <div>
-      <div class="divider"><span></span><em>Sobre</em><span></span></div>
-      <h2>Olá, eu sou a <em style="font-style: italic; color: #696FC7;">Nathália</em>.</h2>
-      <p>Bem-vinda(o)! Sou a Nath, manicure com uma década de experiência, e venho transformando o cuidado com as unhas em um momento de autocuidado.</p>
-      <p>Ao longo desses 10 anos, fui me especializando em esmaltação em gel e alongamentos no molde F1 e em fibra de vidro. Busco sempre as tendências do mercado para te entregar atendimentos exclusivos e alcançar resultados que unem saúde, técnica e durabilidade.</p>
-      <p>Navegue pelo site para ver meu portfólio e conhecer um pouco mais sobre o meu trabalho.</p>
-      <div class="about-stats">
-        <div><div class="n">+10</div><div class="l">Anos de carreira</div></div>
-        <div><div class="n">5★</div><div class="l">Avaliação média</div></div>
-        <div><div class="n">+3k</div><div class="l">Atendimentos realizados</div></div>
-      </div>
-    </div>
-  </div>
-</section>
+  <a id="top"></a>
 
-<!-- COURSES SECTION -->
-<section class="courses-section" id="cursos">
-  <div class="container">
-    <div class="courses-grid">
-      <div class="courses-img-wrap">
-        <div class="courses-img">
-          <img src="assets/img/sala.jpeg" alt="Aluna aprendendo técnica de nail art" />
-        </div>
-      </div>
-      <div class="courses-content">
-        <span class="eyebrow">Formação Profissional</span>
-        <div class="courses-divider"></div>
-        <h2>Transforme sua <em>paixão</em> em profissão.</h2>
-        <p>Mais de 10 anos de técnica e mercado reunidos em uma formação completa, individual e presencial. Você aprende do zero ao avançado — com quem ensina o que vive.</p>
-
-        <div class="courses-badge-row">
-          <span class="courses-badge">Presencial · Balneário Camboriú - SC</span>
-          <span class="courses-badge">Certificado</span>
-          <span class="courses-badge">Aula individual</span>
-        </div>
-
-        <div class="courses-features">
-          <div class="course-feat">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Cuticulagem
-          </div>
-          <div class="course-feat">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Esmaltação em Gel
-          </div>
-          <div class="course-feat">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Nail Art
-          </div>
-          <div class="course-feat">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Foto e Iluminação
-          </div>
-          <div class="course-feat">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Higienização
-          </div>
-          <div class="course-feat">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Mentoria Individual
-          </div>
-        </div>
-
-        <div class="courses-cta-row">
-          <a class="btn-course-primary" href="formacao.html">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            Sobre o curso
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Nail Art · Balneário Camboriú - SC</span>
+        <h1>Unhas que contam <em><strong>histórias</strong></em>.</h1>
+        <p>Atendimento exclusivo com técnica e arte que se encontram para realçar sua melhor versão.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary"
+            href="https://wa.me/5547997041491?text=Ol%C3%A1%20Nathália%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.">
+            <img src="assets/img/whatsapp.svg" alt="WhatsApp" style="width: 20px; height: 20px;" />
+            Agendar pelo WhatsApp
           </a>
-          <a class="btn btn-primary" href="https://wa.me/5547997041491?text=Ol%C3%A1%20Nathália%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.">
-              <img src="assets/img/whatsapp.svg" alt="WhatsApp" style="width: 20px; height: 20px;" />
-              Fazer inscrição agora
-            </a>
+          <a class="btn btn-instagram" href="https://www.instagram.com/nNathálialeal/" target="_blank" rel="noopener">
+            <img src="assets/img/instagram.svg" alt="Instagram" style="width: 20px; height: 20px;" />
+            Ver no Instagram
+          </a>
+          <a class="btn btn-services" href="#servicos">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+            Ver serviços
+          </a>
+
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-blob" aria-hidden="true"></div>
+        <div class="hero-img">
+          <img src="assets/img/principal.jpeg" alt="Mãos com nail art delicada em tons rosé e lavanda" />
+        </div>
+        <div class="hero-badge">
+          <span class="num">+<strong>10</strong></span>
+          <span class="lbl">anos cuidando das suas mãos com carinho</span>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- GALERIA -->
-<section class="gallery" id="galeria">
-  <div class="container">
-    <div class="section-head">
-      <div class="divider"><span></span><em>Portfólio</em><span></span></div>
-      <h2>Trabalhos recentes</h2>
-      <p class="lead">Uma seleção das criações mais amadas pelas clientes.</p>
+  <!-- SOBRE -->
+  <section class="about" id="sobre">
+    <div class="container about-grid">
+      <div class="about-img">
+        <img src="assets/img/quem_sou_eu2.jpeg" alt="Retrato de Nathália Reis, nail designer" />
+      </div>
+      <div>
+        <div class="divider"><span></span><em>Sobre</em><span></span></div>
+        <h2>Olá, eu sou a <em style="font-style: italic; color: #696FC7;">Nathália</em>.</h2>
+        <p>Bem-vinda(o)! Sou a Nath, manicure com uma década de experiência, e venho transformando o cuidado com as
+          unhas em um momento de autocuidado.</p>
+        <p>Ao longo desses 10 anos, fui me especializando em esmaltação em gel e alongamentos no molde F1 e em fibra de
+          vidro. Busco sempre as tendências do mercado para te entregar atendimentos exclusivos e alcançar resultados
+          que unem saúde, técnica e durabilidade.</p>
+        <p>Navegue pelo site para ver meu portfólio e conhecer um pouco mais sobre o meu trabalho.</p>
+        <div class="about-stats">
+          <div>
+            <div class="n">+10</div>
+            <div class="l">Anos de carreira</div>
+          </div>
+          <div>
+            <div class="n">5★</div>
+            <div class="l">Avaliação média</div>
+          </div>
+          <div>
+            <div class="n">+3k</div>
+            <div class="l">Atendimentos realizados</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="gallery-grid">
-      <div class="gallery-item tall"><img src="assets\img\1.jpeg" alt="Nail art em tom nude com detalhes dourados" loading="lazy"/></div>
-      <div class="gallery-item"><img src="assets\img\2.jpeg" alt="Esmaltação em gel rosé minimalista" loading="lazy"/></div>
-      <div class="gallery-item"><img src="assets\img\9.jpeg" alt="Unhas amêndoa com francesinha colorida" loading="lazy"/></div>
-      <div class="gallery-item wide"><img src="assets\img\11.jpeg" alt="Nail art poá" loading="lazy"/></div>
-      <div class="gallery-item"><img src="assets\img\12.jpeg" alt="Nail azul" loading="lazy"/></div>
-      <div class="gallery-item"><img src="assets\img\10.jpeg" alt="Nail art inça" loading="lazy"/></div>
-      <div class="gallery-item tall"><img src="assets\img\7.jpeg" alt="Nail art com detalhes geométricos" loading="lazy"/></div>
-      <div class="gallery-item"><img src="assets\img\8.jpeg" alt="Mãos cuidadas em tom rosa pálido" loading="lazy"/></div>
-      <div class="gallery-item"><img src="assets\img\5.jpeg" alt="Nail azul" loading="lazy"/></div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- DEPOIMENTOS -->
-<section class="testi" id="depoimentos">
-  <div class="container">
-    <div class="section-head">
-      <div class="divider"><span></span><em>O que dizem as clientes</em><span></span></div>
-      <h2>Cuidado que se sente</h2>
-    </div>
-    <div class="testi-grid">
-      <article class="testi-card">
-        <div class="stars" aria-label="5 estrelas">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
-        </div>
-        <p class="testi-quote">“Excelente profissional! Atendimento impecável, super caprichosa e atenciosa. Minhas unhas ficam perfeitas, com ótima durabilidade. Recomendo muito! Já faço com ela faz anos e não troco por nada ❤️❤️”</p>
-        <div class="testi-author">
-          <div class="avatar"><img src="https://cdnstatic.tencentcs.com/edgeone/pages/assets/1786407462028-OgxS.png" alt=""/></div>
-          <div><div class="name">Maria Eduarda</div><div class="meta">Cliente há mais de 4 anos</div></div>
-        </div>
-      </article>
-      <article class="testi-card">
-        <div class="stars" aria-label="5 estrelas">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
-        </div>
-        <p class="testi-quote">“Nath é uma profissional sem igual! Primeira pessoa que conseguiu fazer minha unha e deixar ela intacta por tanto tempo! Amo teu serviço e tua pessoa!”</p>
-        <div class="testi-author">
-          <div class="avatar"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUaDVCaui-n-O0j0VltmH07fBDzkCMeiHYQZUjq4la-43U-Z92Iog=w90-h90-p-rp-mo-br100" alt=""/></div>
-          <div><div class="name">Francine Ramos</div><div class="meta">Cliente há mais de 3 anos</div></div>
-        </div>
-      </article>
-      <article class="testi-card">
-        <div class="stars" aria-label="5 estrelas">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
-        </div>
-        <p class="testi-quote">“A Nath é maravilhosa! Detalhista e cuidadosa, sempre tem muita paciência e faz unhas perfeitas. Indico de olhos fechados!”</p>
-        <div class="testi-author">
-          <div class="avatar"><img src="https://lh3.googleusercontent.com/a-/ALV-UjW1VdUohtFD1oSvRfkgKRO6G6xoE30aEIa1Vs86Fqld4FhPA28k=w90-h90-p-rp-mo-br100" alt=""/></div>
-          <div><div class="name">Larissa Serpa</div><div class="meta">Cliente há mais de 3 anos</div></div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
 
-<!-- FAQ -->
-<section id="faq">
-  <div class="container">
-    <div class="section-head">
-      <div class="divider"><span></span><em>Perguntas Frequentes</em><span></span></div>
-      <h2>Tudo que você precisa saber</h2>
+  <!-- GALERIA -->
+  <section class="gallery" id="galeria">
+    <div class="container">
+      <div class="section-head">
+        <div class="divider"><span></span><em>Portfólio</em><span></span></div>
+        <h2>Trabalhos recentes</h2>
+        <p class="lead">Uma seleção das criações mais amadas pelas clientes.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item tall"><img src="assets\img\1.jpeg" alt="Nail art em tom nude com detalhes dourados"
+            loading="lazy" /></div>
+        <div class="gallery-item"><img src="assets\img\2.jpeg" alt="Esmaltação em gel rosé minimalista"
+            loading="lazy" /></div>
+        <div class="gallery-item"><img src="assets\img\9.jpeg" alt="Unhas amêndoa com francesinha colorida"
+            loading="lazy" /></div>
+        <div class="gallery-item wide"><img src="assets\img\11.jpeg" alt="Nail art poá" loading="lazy" /></div>
+        <div class="gallery-item"><img src="assets\img\12.jpeg" alt="Nail azul" loading="lazy" /></div>
+        <div class="gallery-item"><img src="assets\img\10.jpeg" alt="Nail art inça" loading="lazy" /></div>
+        <div class="gallery-item tall"><img src="assets\img\7.jpeg" alt="Nail art com detalhes geométricos"
+            loading="lazy" /></div>
+        <div class="gallery-item"><img src="assets\img\8.jpeg" alt="Mãos cuidadas em tom rosa pálido" loading="lazy" />
+        </div>
+        <div class="gallery-item"><img src="assets\img\5.jpeg" alt="Nail azul" loading="lazy" /></div>
+      </div>
     </div>
-    <div class="faq-wrap">
-      <details class="faq-item">
-        <summary>Quanto tempo dura cada atendimento?</summary>
-        <div class="faq-body">Esmaltação em gel - 1h30min. Manutenção - 1h30min a 2h00. Alongamento - 2h30min a 3h00.</div>
-      </details>
-      <details class="faq-item">
-        <summary>Quanto tempo dura a esmaltação em gel?</summary>
-        <div class="faq-body">Em média 21 a 30 dias. A durabilidade depende dos cuidados que a cliente deverá ter após o atendimento.</div>
-      </details>
-      <details class="faq-item">
-        <summary>Como funciona o agendamento?</summary>
-        <div class="faq-body">100% pelo WhatsApp. Confirmação de horário um dia antes do atendimento agendado.</div>
-      </details>
-      <details class="faq-item">
-        <summary>Quais são as formas de pagamento?</summary>
-        <div class="faq-body">Pix, dinheiro e cartões de crédito/débito. Para pagamentos no cartão, é acrescentado uma taxa de R$10,00.</div>
-      </details>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- SERVIÇOS -->
-<section id="servicos" class="services-section">
+  <!-- DEPOIMENTOS -->
+  <section class="testi" id="depoimentos">
+    <div class="container">
+      <div class="section-head">
+        <div class="divider"><span></span><em>O que dizem as clientes</em><span></span></div>
+        <h2>Cuidado que se sente</h2>
+      </div>
+      <div class="testi-grid">
+        <article class="testi-card">
+          <div class="stars" aria-label="5 estrelas">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+          </div>
+          <p class="testi-quote">“Excelente profissional! Atendimento impecável, super caprichosa e atenciosa. Minhas
+            unhas ficam perfeitas, com ótima durabilidade. Recomendo muito! Já faço com ela faz anos e não troco por
+            nada ❤️❤️”</p>
+          <div class="testi-author">
+            <div class="avatar"><img src="https://cdnstatic.tencentcs.com/edgeone/pages/assets/1786407462028-OgxS.png"
+                alt="" /></div>
+            <div>
+              <div class="name">Maria Eduarda</div>
+              <div class="meta">Cliente há mais de 4 anos</div>
+            </div>
+          </div>
+        </article>
+        <article class="testi-card">
+          <div class="stars" aria-label="5 estrelas">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+          </div>
+          <p class="testi-quote">“Nath é uma profissional sem igual! Primeira pessoa que conseguiu fazer minha unha e
+            deixar ela intacta por tanto tempo! Amo teu serviço e tua pessoa!”</p>
+          <div class="testi-author">
+            <div class="avatar"><img
+                src="https://lh3.googleusercontent.com/a-/ALV-UjUaDVCaui-n-O0j0VltmH07fBDzkCMeiHYQZUjq4la-43U-Z92Iog=w90-h90-p-rp-mo-br100"
+                alt="" /></div>
+            <div>
+              <div class="name">Francine Ramos</div>
+              <div class="meta">Cliente há mais de 3 anos</div>
+            </div>
+          </div>
+        </article>
+        <article class="testi-card">
+          <div class="stars" aria-label="5 estrelas">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+          </div>
+          <p class="testi-quote">“A Nath é maravilhosa! Detalhista e cuidadosa, sempre tem muita paciência e faz unhas
+            perfeitas. Indico de olhos fechados!”</p>
+          <div class="testi-author">
+            <div class="avatar"><img
+                src="https://lh3.googleusercontent.com/a-/ALV-UjW1VdUohtFD1oSvRfkgKRO6G6xoE30aEIa1Vs86Fqld4FhPA28k=w90-h90-p-rp-mo-br100"
+                alt="" /></div>
+            <div>
+              <div class="name">Larissa Serpa</div>
+              <div class="meta">Cliente há mais de 3 anos</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-head">
+        <div class="divider"><span></span><em>Perguntas Frequentes</em><span></span></div>
+        <h2>Tudo que você precisa saber</h2>
+      </div>
+      <div class="faq-wrap">
+        <details class="faq-item">
+          <summary>Quanto tempo dura cada atendimento?</summary>
+          <div class="faq-body">Esmaltação em gel - 1h30min. Manutenção - 1h30min a 2h00. Alongamento - 2h30min a 3h00.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Quanto tempo dura a esmaltação em gel?</summary>
+          <div class="faq-body">Em média 21 a 30 dias. A durabilidade depende dos cuidados que a cliente deverá ter após
+            o atendimento.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Como funciona o agendamento?</summary>
+          <div class="faq-body">100% pelo WhatsApp. Confirmação de horário um dia antes do atendimento agendado.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Quais são as formas de pagamento?</summary>
+          <div class="faq-body">Pix, dinheiro e cartões de crédito/débito. Para pagamentos no cartão, é acrescentado uma
+            taxa de R$10,00.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="services-section">
     <div class="container">
       <div class="center">
         <div class="divider"><span></span><em>Catálogo de serviços</em><span></span></div>
         <h2 class="section-title">Serviços & valores</h2>
-        <p class="section-lead">Procedimentos realizados com marcas reconhecidas no mercado e protocolo completo de cuidados da unha natural.</p>
+        <p class="section-lead">Procedimentos realizados garantindo os cuidados da unha natural.</p>
       </div>
 
       <!-- MOBILE PRICE TABLE (Visible only on mobile) -->
@@ -1164,16 +2097,20 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
             <span class="mobile-price-name">Esmaltação em Gel</span>
             <span class="mobile-price-time">1h00 a 1h30</span>
           </div>
-          <span class="currency"><span class="currency" style="padding-right: 15px; font-size: 13px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;" >por</span><span class="mobile-price-value">110</span>
+          <span class="currency"><span class="currency"
+              style="padding-right: 15px; font-size: 13px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;"><span
+              class="mobile-price-value">R$110</span>
         </div>
-                
+
         <div class="mobile-price-row">
           <div class="mobile-price-info">
             <span class="mobile-price-tag">Proteção</span>
             <span class="mobile-price-name">Banho de Gel</span>
             <span class="mobile-price-time">1h45 a 2h00</span>
           </div>
-          <span class="currency"><span class="currency" style="padding-right: 15px; font-size: 13px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;" >por</span><span class="mobile-price-value">160</span>
+          <span class="currency"><span class="currency"
+              style="padding-right: 15px; font-size: 13px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;"><span
+              class="mobile-price-value">R$160</span>
         </div>
         <div class="mobile-price-row">
           <div class="mobile-price-info">
@@ -1181,15 +2118,19 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
             <span class="mobile-price-name">Quadrada · Redonda</span>
             <span class="mobile-price-time">2h30 a 3h00</span>
           </div>
-          <span class="currency"><span class="currency" style="padding-right: 15px; font-size: 13px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;" >por</span><span class="mobile-price-value">250</span>
+          <span class="currency"><span class="currency"
+              style="padding-right: 15px; font-size: 13px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;"><span
+              class="mobile-price-value">R$250</span>
         </div>
         <div class="mobile-price-row">
           <div class="mobile-price-info">
-            <span class="mobile-price-tag">Premium</span>
+            <span class="mobile-price-tag">alongamento</span>
             <span class="mobile-price-name">Almond · Bailarina</span>
             <span class="mobile-price-time">2h30 a 3h00</span>
           </div>
-          <span class="currency"><span class="currency" style="padding-right: 15px; font-size: 10px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;" >por</span><span class="mobile-price-value">270</span>
+          <span class="currency"><span class="currency"
+              style="padding-right: 15px; font-size: 10px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;"><span
+              class="mobile-price-value">R$270</span>
         </div>
         <div class="mobile-price-row">
           <div class="mobile-price-info">
@@ -1197,15 +2138,19 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
             <span class="mobile-price-name">Do alongamento</span>
             <span class="mobile-price-time">1h45 a 2h00</span>
           </div>
-          <span class="currency"><span class="currency" style="padding-right: 15px; font-size: 10px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;" >por</span><span class="mobile-price-value">160</span>
+          <span class="currency"><span class="currency"
+              style="padding-right: 15px; font-size: 10px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;"><span
+              class="mobile-price-value">R$160</span>
         </div>
         <div class="mobile-price-row">
           <div class="mobile-price-info">
-            <span class="mobile-price-tag">Externa</span>
+            <span class="mobile-price-tag">outra profissional</span>
             <span class="mobile-price-name">Manutenção externa</span>
             <span class="mobile-price-time">2h00 a 2h30</span>
           </div>
-          <span class="currency"><span class="currency" style="padding-right: 15px; font-size: 10px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;" >por</span><span class="mobile-price-value">190</span>
+          <span class="currency"><span class="currency"
+              style="padding-right: 15px; font-size: 10px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;"><span
+              class="mobile-price-value">R$190</span>
         </div>
       </div>
 
@@ -1213,9 +2158,11 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
         <article class="price-card featured">
           <span class="tag">Mais procurado</span>
           <h3>Esmaltação em Gel</h3>
-          <p>Esmalte em gel fotopolimerizável, curado em cabine LED/UV. Brilho intenso, acabamento uniforme e durabilidade prolongada.</p>
+          <p>Esmalte em gel fotopolimerizável, curado em cabine LED/UV. Brilho intenso, acabamento uniforme e
+            durabilidade prolongada.</p>
           <div class="price-row">
-            <span class="currency"><span class="currency" style="padding-right: 15px; font-size: 10px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;" >por</span></span>
+            <span class="currency"><span class="currency"
+                style="padding-right: 15px; font-size: 10px;color: var(--muted);letter-spacing: .12em;text-transform: uppercase;align-items: end;"></span>
             <span class="value">110<span class="cents">,00</span></span>
           </div>
           <div class="meta">Duração: 1h00 a 1h30</div>
@@ -1224,12 +2171,13 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
         <article class="price-card featured">
           <span class="tag">Reforço & proteção</span>
           <h3>Banho de Gel</h3>
-          <p>Gel construtor sobre a unha natural — reforço, proteção e acabamento uniforme, sem alongamento. Inclui reposição de uma unha.</p>
+          <p>Gel construtor sobre a unha natural — reforço, proteção e acabamento uniforme, sem alongamento. Inclui
+            reposição de uma unha.</p>
           <div class="price-row">
-            <span class="currency">por</span>
+            <span class="currency">
             <span class="value">160<span class="cents">,00</span></span>
           </div>
-          <div class="meta">Duração: 1h00 a 1h30</div>
+          <div class="meta">Duração: 1h45 a 2h00</div>
         </article>
 
         <article class="price-card featured">
@@ -1237,7 +2185,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
           <h3>Alongamento</h3>
           <p>Molde F1, fibra de vidro ou tips de gel — você escolhe. Inclui cuticulagem e esmaltação em gel.</p>
           <div class="price-row">
-            <span class="currency">por</span>
+            <span class="currency">
             <span class="value">250<span class="cents">,00</span></span>
           </div>
           <div class="meta">Duração: 2h30 a 3h00</div>
@@ -1248,7 +2196,7 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
           <h3>Alongamento</h3>
           <p>Formatos alongados com curvatura precisa. Inclui cuticulagem e esmaltação em gel.</p>
           <div class="price-row">
-            <span class="currency">por</span>
+            <span class="currency">
             <span class="value">270<span class="cents">,00</span></span>
           </div>
           <div class="meta">Duração: 2h30 a 3h00</div>
@@ -1257,9 +2205,10 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
         <article class="price-card featured">
           <span class="tag">Alongamento</span>
           <h3>Manutenção</h3>
-          <p>Remoção parcial, correção da estrutura, nivelamento e novo acabamento. Inclui uma unha de reposição, cuticulagem e esmaltação em gel.</p>
+          <p>Remoção parcial, correção da estrutura, nivelamento e novo acabamento. Inclui uma unha de reposição,
+            cuticulagem e esmaltação em gel.</p>
           <div class="price-row">
-            <span class="currency">por</span>
+            <span class="currency">
             <span class="value">160<span class="cents">,00</span></span>
           </div>
           <div class="meta">Duração: 1h45 a 2h00</div>
@@ -1268,47 +2217,140 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
         <article class="price-card featured">
           <span class="tag">Manutenção externa</span>
           <h3>Feito por outra profissional</h3>
-          <p>Avaliação prévia. Apenas alongamentos em gel - não realizamos manutenção em acrílico ou polygel. Inclui cuticulagem e esmaltação em gel.</p>
+          <p>Avaliação prévia. Apenas alongamentos em gel - não realizamos manutenção em acrílico ou polygel. Inclui
+            cuticulagem e esmaltação em gel.</p>
           <div class="price-row">
-            <span class="currency">por</span>
+            <span class="currency">
             <span class="value">190<span class="cents">,00</span></span>
           </div>
           <div class="meta">Duração: 2h00 a 2h30</div>
         </article>
       </div>
 
-<!-- ATELIER SECTION -->
-<section class="atelier-section" id="contato">
-  <div class="atelier-container">
-    <div class="atelier-content">
-      <span class="eyebrow">Localização</span>
-      <h2>Visite o espaço.</h2>
-      <p class="lead">Pensado para o seu conforto e atendimento exclusivo.</p>
-      <div class="atelier-address">
-        <div class="atelier-address-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        </div>
-        <div class="atelier-address-text">
-          <strong>Nail Art</strong>
-          <p>Rua Protásio Boaventua Caetano, nº. 56A · Sala 201<br/>Pioneiros · Balneário Camboriú · SC</p>
-        </div>
-      </div>
-      <div class="atelier-hours">
-        <h3>Horários</h3>
-        <ul>
-          <li><span>Terça a sexta</span> <strong>10h — 19h</strong></li>
-          <li><span>Sábado</span> <strong>10h — 19h</strong></li>
-          <li><span>Domingo e segunda</span> <strong>Fechado</strong></li>
-        </ul>
-      </div>
+    <!-- COURSES SECTION -->
+    <section class="courses-section" id="cursos">
+      <div class="container">
+        <div class="courses-grid">
+          <div class="courses-img-wrap">
+            <div class="courses-img">
+              <img src="assets/img/sala.jpeg" alt="Aluna aprendendo técnica de nail art" />
+            </div>
+          </div>
+          <div class="courses-content">
+            <span class="eyebrow">Curso · Esmaltação em gel</span>
+            <div class="courses-divider"></div>
+            <h2>Transforme sua <em>paixão</em> em profissão.</h2>
+            <p>Mais de 10 anos de técnica e mercado reunidos em uma formação completa, individual e presencial. Você
+              aprende do zero ao avançado — com quem ensina o que vive.</p>
 
-    </div>
-    
-    <div class="atelier-visual">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11927.660384478835!2d-48.63547185740442!3d-26.977577566801152!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cb4cb5293063%3A0x8b8b18ed96360926!2sNath%C3%A1lia%20Parteka%E2%80%93%20Manicure%20e%20Unhas%20em%20Gel!5e0!3m2!1spt-BR!2sbr!4v1786406078844!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-    </div>
-  </div>
-</section>
+            <div class="courses-badge-row">
+              <span class="courses-badge">Presencial · Balneário Camboriú - SC</span>
+              <span class="courses-badge">Certificado</span>
+              <span class="courses-badge">Aula individual</span>
+            </div>
+
+            <div class="courses-features">
+              <div class="course-feat">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                Cuticulagem
+              </div>
+              <div class="course-feat">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                Esmaltação em Gel
+              </div>
+              <div class="course-feat">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                Nail Art
+              </div>
+              <div class="course-feat">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                Foto e Iluminação
+              </div>
+              <div class="course-feat">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                Higienização
+              </div>
+              <div class="course-feat">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                Mentoria Individual
+              </div>
+            </div>
+
+            <div class="courses-cta-row">
+              <a class="btn-course-primary" href="formacao.html">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                Sobre o curso
+              </a>
+              <a class="btn btn-primary"
+                href="https://wa.me/5547997041491?text=Ol%C3%A1%20Nathália%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.">
+                <img src="assets/img/whatsapp.svg" alt="WhatsApp" style="width: 20px; height: 20px;" />
+                Fazer inscrição agora
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- ATELIER SECTION -->
+      <section class="atelier-section" id="contato">
+        <div class="atelier-container">
+          <div class="atelier-content">
+            <span class="eyebrow">Localização</span>
+            <h2>Visite o espaço.</h2>
+            <p class="lead">Pensado para o seu conforto e atendimento exclusivo.</p>
+            <div class="atelier-address">
+              <div class="atelier-address-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div class="atelier-address-text">
+                <strong>Endereço:</strong>
+                <p>Rua Protásio Boaventua Caetano, nº. 56A · Sala 201<br />Pioneiros · Balneário Camboriú · SC</p>
+              </div>
+            </div>
+            <div class="atelier-hours">
+              <h3>Horários</h3>
+              <ul>
+                <li><span>Terça a sexta</span> <strong>10h — 19h</strong></li>
+                <li><span>Sábado</span> <strong>10h — 19h</strong></li>
+                <li><span>Domingo e segunda</span> <strong>Fechado</strong></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="atelier-visual">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11927.660384478835!2d-48.63547185740442!3d-26.977577566801152!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cb4cb5293063%3A0x8b8b18ed96360926!2sNath%C3%A1lia%20Parteka%E2%80%93%20Manicure%20e%20Unhas%20em%20Gel!5e0!3m2!1spt-BR!2sbr!4v1786406078844!5m2!1spt-BR!2sbr"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+        </div>
+      </section>
 
       <!-- QUICK CTA -->
       <div class="quick-cta">
@@ -1317,7 +2359,8 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
           <h3>Pronta para um momento <em>só seu</em>?</h3>
           <p class="cta-sub">Agende seu horário pelo WhatsApp ou entre em contato para mais informações.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/5547997041491?text=Ol%C3%A1%20Nath%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.">
+            <a class="btn btn-primary"
+              href="https://wa.me/5547997041491?text=Ol%C3%A1%20Nath%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.">
               <img src="assets/img/whatsapp.svg" alt="WhatsApp" style="width: 20px; height: 20px;" />
               Agendar pelo WhatsApp
             </a>
@@ -1330,25 +2373,38 @@ border-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045) 1;
       </div>
 
 
-<!-- FOOTER -->
-<footer class="site">
-  <div class="container row">
-    <div>© 2026 Nathália Leal · Todos os direitos reservados</div>
-    <div class="socials">
-      <a href="https://wa.me/5547997041491" aria-label="WhatsApp">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487 1.713.741 2.379.806 3.234.679.521-.078 1.602-.654 1.827-1.287.226-.633.226-1.176.158-1.287-.067-.111-.247-.176-.516-.293z"/></svg>
-      </a>
-      <a href="https://www.instagram.com/nNathálialeal/" aria-label="Instagram" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-      </a>
-    </div>
-  </div>
-</footer>
+      <!-- FOOTER -->
+      <footer class="site">
+        <div class="container row">
+          <div>© 2026 Nathália Leal · Todos os direitos reservados</div>
+          <div class="socials">
+            <a href="https://wa.me/5547997041491" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487 1.713.741 2.379.806 3.234.679.521-.078 1.602-.654 1.827-1.287.226-.633.226-1.176.158-1.287-.067-.111-.247-.176-.516-.293z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/nNathálialeal/" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
 
-<!-- WHATSAPP FLUTUANTE -->
-<a class="wa-float" href="https://wa.me/5547997041491?text=Ol%C3%A1%20Nathália%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." aria-label="Falar no WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
+      <!-- WHATSAPP FLUTUANTE -->
+      <a class="wa-float"
+        href="https://wa.me/5547997041491?text=Ol%C3%A1%20Nathália%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+        aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+      </a>
 
 </body>
+
 </html>
