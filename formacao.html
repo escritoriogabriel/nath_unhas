@@ -225,7 +225,7 @@
       gap: 12px;
       flex-wrap: wrap;
       margin-bottom: 40px;
-      justify-content: center;
+      justify-content: flex-start;
     }
 
     .hero-badge-pill {
@@ -243,7 +243,7 @@
       align-items: center;
       gap: 10px;
       width: fit-content;
-      padding: 15px 0px;
+      padding: 12px 22px;
       border-radius: 999px;
       font-size: 14px;
       font-weight: 500;
@@ -255,8 +255,11 @@
       justify-content: center;
     }
 
-    .btn-hero-cta:hover {
-      background: #fff;
+    .btn-hero-cta:hover,
+    .btn-hero-cta:focus-visible,
+    .btn-hero-cta:active {
+      background: linear-gradient(134deg, #25d366 0%, #1ab855 100%);
+      color: #fff;
       transform: translateY(-2px);
       box-shadow: 0 16px 36px rgba(235, 214, 251, 0.5);
     }
@@ -555,7 +558,7 @@
     .btn-invest {
       display: block;
       text-align: center;
-      padding: 18px;
+      padding: 14px 22px;
       border-radius: 999px;
       background: var(--lilac);
       color: var(--ink);
@@ -567,8 +570,11 @@
       text-decoration: none;
     }
 
-    .btn-invest:hover {
-      background: #fff;
+    .btn-invest:hover,
+    .btn-invest:focus-visible,
+    .btn-invest:active {
+      background: linear-gradient(134deg, #25d366 0%, #1ab855 100%);
+      color: #fff;
       transform: translateY(-2px);
     }
 
@@ -764,7 +770,7 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      padding: 15px 26px;
+      padding: 12px 22px;
       border-radius: 999px;
       font-size: 14px;
       font-weight: 500;
@@ -778,8 +784,11 @@
       text-decoration: unset;
     }
 
-    .btn-cta-main:hover {
-      background: #fff;
+    .btn-cta-main:hover,
+    .btn-cta-main:focus-visible,
+    .btn-cta-main:active {
+      background: linear-gradient(134deg, #25d366 0%, #1ab855 100%);
+      color: #fff;
       transform: translateY(-2px);
     }
 
@@ -915,6 +924,16 @@
     @media (max-width: 900px) {
       .btn-hero-cta {
         width: 100%;
+        padding: 15px 26px;
+      }
+
+      .hero-badges {
+        justify-content: center;
+      }
+
+      .btn-invest,
+      .btn-cta-main {
+        padding: 18px 26px;
       }
 
       .about-course-grid {
