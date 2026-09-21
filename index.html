@@ -52,6 +52,7 @@
       background: #ffffff;
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
 
     img {
@@ -1425,6 +1426,25 @@
     }
 
     @media (max-width: 560px) {
+      .container {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .logo_principal {
+        max-width: 48%;
+        padding-left: 0;
+      }
+
+      .hero-visual {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      .about-img {
+        margin-right: 0;
+      }
+
       .services-grid {
         grid-template-columns: 1fr;
       }
@@ -1884,15 +1904,6 @@
         <h1>Unhas que contam <em><strong>histórias</strong></em>.</h1>
         <p>Atendimento exclusivo com técnica e arte que se encontram para realçar sua melhor versão!</p>
         <div class="hero-actions">
-          <a class="btn btn-primary"
-            href="https://wa.me/5547997041491?text=Ol%C3%A1%20Nathália%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.">
-            <img src="assets/img/whatsapp.svg" alt="WhatsApp" style="width: 20px; height: 20px;" />
-            Agendar pelo WhatsApp
-          </a>
-          <a class="btn btn-instagram" href="https://www.instagram.com/nNathálialeal/" target="_blank" rel="noopener">
-            <img src="assets/img/instagram.svg" alt="Instagram" style="width: 20px; height: 20px;" />
-            Ver no Instagram
-          </a>
           <a class="btn btn-services" href="#servicos">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M12 5v14M5 12h14" />
