@@ -242,6 +242,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      width: fit-content;
       padding: 15px 26px;
       border-radius: 999px;
       font-size: 14px;
@@ -912,6 +913,10 @@
 
     /* RESPONSIVO */
     @media (max-width: 900px) {
+      .btn-hero-cta {
+        width: 100%;
+      }
+
       .about-course-grid {
         grid-template-columns: 1fr;
         gap: 48px;
