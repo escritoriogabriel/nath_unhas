@@ -371,6 +371,13 @@
       border-color: var(--lilac);
     }
 
+    .module-card-header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
     .module-icon {
       width: 52px;
       height: 52px;
@@ -380,7 +387,8 @@
       align-items: center;
       justify-content: center;
       color: var(--indigo);
-      margin-bottom: 22px;
+      margin-bottom: 0;
+      flex-shrink: 0;
     }
 
     .module-icon svg {
@@ -396,7 +404,7 @@
 
     .module-card h3 {
       font-size: 20px;
-      margin-bottom: 10px;
+      margin-bottom: 0;
     }
 
     .module-card p {
@@ -1032,10 +1040,12 @@
       </div>
       <div class="modules-grid">
         <div class="module-card">
+          <div class="module-card-header">
           <div class="module-icon">
             <img src="assets/img/unha.png" alt="" />
           </div>
           <h3>Preparação das unhas</h3>
+          </div>
           <p>
             Higienização e preparação da lâmina ungueal, para garantir a melhor aderência,
             durabilidade e segurança na sua esmaltação.
@@ -1043,10 +1053,12 @@
           <span class="module-tag">Módulo 1</span>
         </div>
         <div class="module-card">
+          <div class="module-card-header">
           <div class="module-icon">
             <img src="assets/img/alicate.png" alt="" />
           </div>
           <h3>Cuticulagem</h3>
+          </div>
           <p>
             Aprenda a fazer uma cuticulagem limpa, profunda e sem machucados, garantindo um
             contorno de excelência.
@@ -1054,10 +1066,12 @@
           <span class="module-tag">Módulo 2</span>
         </div>
         <div class="module-card">
+          <div class="module-card-header">
           <div class="module-icon">
             <img src="assets/img/esmalte.png" alt="" />
           </div>
           <h3>Aplicação do esmalte em gel</h3>
+          </div>
           <p>
             Aplicação e alinhamento do gel base e do esmalte em gel. Controle do produto, evitando
             desperdício e garantindo resistência, naturalidade e nivelamento.
@@ -1065,18 +1079,22 @@
           <span class="module-tag">Módulo 3</span>
         </div>
         <div class="module-card">
+          <div class="module-card-header">
           <div class="module-icon">
             <img src="assets/img/brilho.png" alt="" />
           </div>
           <h3>Acabamento</h3>
+          </div>
           <p>Finalização com top coat, e como evitar possíveis erros.</p>
           <span class="module-tag">Módulo 4</span>
         </div>
         <div class="module-card">
+          <div class="module-card-header">
           <div class="module-icon">
             <img src="assets/img/camera.png" alt="" />
           </div>
           <h3>Foto e Iluminação</h3>
+          </div>
           <p>
             Aprenda como a iluminação influência seus atendimentos. Como posicionar as mãos e
             configurar sua câmera.
@@ -1084,6 +1102,7 @@
           <span class="module-tag">Módulo 5</span>
         </div>
         <div class="module-card">
+          <div class="module-card-header">
           <div class="module-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
@@ -1093,6 +1112,7 @@
             </svg>
           </div>
           <h3>Mentoria Individual</h3>
+          </div>
           <p>Desenvolva estratégias de crescimento para seu negócio.</p>
           <span class="module-tag">Bônus</span>
         </div>
