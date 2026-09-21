@@ -1280,6 +1280,33 @@
       height: 28px;
     }
 
+    .social-float {
+      position: fixed;
+      right: 24px;
+      bottom: 94px;
+      z-index: 60;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #feda75 0%, #fa7e1e 28%, #d62976 58%, #962fbf 82%, #4f5bd5 100%);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 30px rgba(214, 41, 118, 0.35);
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .social-float:hover {
+      transform: scale(1.08);
+      box-shadow: 0 16px 34px rgba(214, 41, 118, 0.45);
+    }
+
+    .social-float svg {
+      width: 28px;
+      height: 28px;
+    }
+
     /* Responsivo */
     @media (max-width: 900px) {
       section {
@@ -1341,7 +1368,8 @@
       .menu-toggle span {
         width: 22px;
         height: 1.5px;
-        background: var(--ink);
+        background: #fff;
+        border-radius: 999px;
         transition: .3s;
       }
 
@@ -1370,7 +1398,7 @@
       .nav-links {
         padding: 12px 0;
         width: 100%;
-        text-align: left;
+        text-align: center;
         justify-content: center;
       }
 
@@ -1419,20 +1447,27 @@
         text-align: center;
       }
 
-      /* MOBILE: Hero - Texto à esquerda, foto reduzida */
+      /* MOBILE: Hero com foto ampliada e CTAs sociais removidos */
       .hero h1 {
         font-size: 28px;
         margin-bottom: 16px;
       }
 
       .hero-visual {
-        max-width: 100%;
-        display: none
+        display: block;
+        width: calc(100% + 32px);
+        max-width: none;
+        margin-left: -16px;
       }
 
       .hero-img {
-        aspect-ratio: 16/9;
-        border-radius: 16px;
+        aspect-ratio: 4/5;
+        border-radius: 28px;
+      }
+
+      .hero > .container > .hero-grid > div:first-child .hero-actions .btn-primary,
+      .hero > .container > .hero-grid > div:first-child .hero-actions .btn-instagram {
+        display: none;
       }
 
       /* MOBILE: Badge reduzido */
@@ -2390,6 +2425,18 @@
       </footer>
 
       <!-- WHATSAPP FLUTUANTE -->
+      <a class="social-float"
+        href="https://www.instagram.com/nnathalialeal/"
+        aria-label="Acessar o Instagram"
+        target="_blank"
+        rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="2" width="20" height="20" rx="5" />
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+        </svg>
+      </a>
+
       <a class="wa-float"
         href="https://wa.me/5547997041491?text=Ol%C3%A1%20Nathália%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio."
         aria-label="Falar no WhatsApp">
