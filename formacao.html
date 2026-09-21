@@ -39,6 +39,7 @@
       background: var(--rose);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
     img {
       display: block;
@@ -492,6 +493,27 @@
       .about-course-img { display:none; }
     }
     @media (max-width: 560px) {
+      .container {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .nav {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        gap: 16px;
+      }
+
+      .logo_principal {
+        max-width: 48%;
+        padding-left: 0;
+      }
+
+      .back-link {
+        font-size: 13px;
+        white-space: nowrap;
+      }
+
       .modules-grid { grid-template-columns: 1fr; }
     }
   </style>
