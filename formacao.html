@@ -142,8 +142,21 @@
       display: flex;
       align-items: center;
       text-decoration: none;
-      max-width: 30%;
+      max-width: 15%;
       padding-left: 25px;
+    }
+
+    .logo_principal img {
+      display: block;
+      width: 100%;
+      filter: brightness(0) invert(1);
+    }
+
+    @media (max-width: 900px) {
+      .logo_principal {
+        max-width: 30%;
+        padding-left: 30px;
+      }
     }
 
     /* HERO DA PÁGINA */
@@ -947,7 +960,7 @@
   <!-- HEADER -->
   <header class="site">
     <div class="container nav">
-      <a href="index.html" class="logo_principal"><img src="assets/img/logo_nath.svg" alt="Nath Nail Art" /></a>
+      <a href="index.html" class="logo_principal"><img src="assets/img/Frame 8.svg" alt="Nath Nail Art" /></a>
       <a href="index.html" class="back-link">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M19 12H5M12 5l-7 7 7 7" />
