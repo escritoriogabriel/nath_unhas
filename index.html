@@ -1854,8 +1854,66 @@
       opacity: 1
     }
 
+    .other-services-section {
+      background: linear-gradient(180deg, transparent, rgba(235, 214, 251, .2), transparent);
+    }
+
+    .other-services-card {
+      max-width: 900px;
+      margin: 54px auto 0;
+    }
+
+    .other-services-card h3 {
+      margin-bottom: 22px;
+    }
+
+    .other-services-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0 28px;
+      border-top: 1px solid var(--line);
+    }
+
+    .other-service-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .other-service-name {
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .other-service-price {
+      flex-shrink: 0;
+      font-family: 'Lora', serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--indigo-deep);
+      white-space: nowrap;
+    }
+
     .center {
       text-align: center
+    }
+
+    @media(max-width:900px) {
+      .other-services-card {
+        margin-top: 38px;
+      }
+
+      .other-services-list {
+        grid-template-columns: 1fr;
+      }
+
+      .other-service-row {
+        padding: 16px 0;
+      }
     }
 
     /* SECTION DIVIDER */
@@ -2244,8 +2302,44 @@
           <div class="meta">Duração: 2h00 a 2h30</div>
         </article>
       </div>
+    </div>
+  </section>
 
-    <!-- COURSES SECTION -->
+  <!-- OUTROS SERVIÇOS -->
+  <section class="other-services-section">
+    <div class="container">
+      <div class="center">
+        <div class="divider"><span></span><em>outros serviços</em><span></span></div>
+        <h2 class="section-title">Serviços adicionais</h2>
+        <p class="section-lead">Ajustes e cuidados complementares para manter suas unhas impecáveis.</p>
+      </div>
+
+      <article class="price-card featured other-services-card">
+        <span class="tag">Manutenção e ajustes</span>
+        <h3>Outros serviços</h3>
+        <div class="other-services-list">
+          <div class="other-service-row">
+            <span class="other-service-name">Reposição de unha na manutenção</span>
+            <span class="other-service-price">A partir de R$10</span>
+          </div>
+          <div class="other-service-row">
+            <span class="other-service-name">Reposição de unha fora da manutenção</span>
+            <span class="other-service-price">A partir de R$25</span>
+          </div>
+          <div class="other-service-row">
+            <span class="other-service-name">Mudança de formato</span>
+            <span class="other-service-price">A partir de R$40</span>
+          </div>
+          <div class="other-service-row">
+            <span class="other-service-name">Remoção do alongamento</span>
+            <span class="other-service-price">A partir de R$65,00</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- COURSES SECTION -->
     <section class="courses-section" id="cursos">
       <div class="container">
         <div class="courses-grid">
