@@ -1,0 +1,7 @@
+{
+  "routes": [
+    { "path": "/", "title": "Nath Nail Art" },
+    { "path": "/links", "title": "Links · Nathália Parteka" },
+    { "path": "/formacao", "title": "Formação · Nath Nail Art" }
+  ]
+}
