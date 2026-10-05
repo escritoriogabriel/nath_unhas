@@ -26,7 +26,7 @@
 
     body {
       font-family: "DM Sans", sans-serif;
-      background: #efefef;
+      background: #696575;
     }
 
     .links-page {
@@ -156,7 +156,7 @@
     .link-feature {
       position: relative;
       display: block;
-      height: 200px;
+      height: 184px;
       overflow: hidden;
       border: 1px solid rgba(255, 255, 255, .27);
       border-radius: 12px;
@@ -171,7 +171,7 @@
     .link-feature img {
       display: block;
       width: calc(100% - 16px);
-      height: 143px;
+      height: 128px;
       margin: 8px;
       border-radius: 7px;
       object-fit: cover;
@@ -192,7 +192,7 @@
       left: 35px;
       z-index: 1;
       color: #fff;
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 700;
       text-align: center;
     }
@@ -200,7 +200,7 @@
     .link-card {
       position: relative;
       display: flex;
-      min-height: 45px;
+      min-height: 39px;
       align-items: center;
       justify-content: center;
       overflow: hidden;
@@ -234,7 +234,7 @@
       position: relative;
       z-index: 1;
       color: #fff;
-      font-size: 10px;
+      font-size: 13px;
       font-weight: 700;
     }
 
@@ -260,6 +260,12 @@
         opacity: 1;
         transform: translateY(0) scale(1);
       }
+    }
+
+    @media (max-width: 639px) {
+      body { background: #696575; }
+      .links-page { min-height: 100svh; place-items: start center; overflow-x: hidden; background: #696575; }
+      .links-shell { width: 100%; min-height: calc(100svh - 18px); margin: 0; padding-bottom: 22px; border: 0; border-radius: 0; box-shadow: none; }
     }
 
     @media (prefers-reduced-motion: reduce) {
