@@ -18,6 +18,21 @@ const links = [
 ];
 
 function LinksPage() {
+  const sharePage = async () => {
+    const shareData = {
+      title: "Nathália Parteka",
+      text: "Nail art · Esmaltação em Gel · Molde F1",
+      url: window.location.href,
+    };
+
+    if (navigator.share) {
+      await navigator.share(shareData).catch(() => undefined);
+      return;
+    }
+
+    await navigator.clipboard?.writeText(window.location.href);
+  };
+
   return (
     <main className="links-page">
       <div className="links-orb links-orb-top" />
@@ -30,7 +45,12 @@ function LinksPage() {
             <span className="links-action" aria-hidden="true">
               <Sparkles size={15} strokeWidth={2.2} />
             </span>
-            <button className="links-share" type="button" aria-label="Compartilhar página">
+            <button
+              className="links-share"
+              type="button"
+              aria-label="Compartilhar página"
+              onClick={sharePage}
+            >
               <Share2 size={15} strokeWidth={2.2} />
             </button>
           </div>
