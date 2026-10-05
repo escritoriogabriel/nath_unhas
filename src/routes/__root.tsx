@@ -29,10 +29,13 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Nath Nail Art · Nathália Parteka" },
-      { name: "description", content: "Agendamentos, serviços e formação com Nathália Parteka." },
+      { title: "Nathália Parteka · Nail Art" },
+      {
+        name: "description",
+        content: "Nail art, esmaltação em gel e formação com Nathália Parteka.",
+      },
       { name: "author", content: "Nathália Parteka" },
-      { property: "og:title", content: "Nath Nail Art · Nathália Parteka" },
+      { property: "og:title", content: "Nathália Parteka · Nail Art" },
       { property: "og:description", content: "Seu próximo momento de cuidado começa aqui." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -42,6 +45,11 @@ export const Route = createRootRoute({
       {
         rel: "stylesheet",
         href: appCss,
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        href: "/favicon-nathalia.png",
       },
     ],
   }),
