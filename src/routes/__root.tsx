@@ -37,8 +37,17 @@ export const Route = createRootRoute({
       { name: "author", content: "Nathália Parteka" },
       { property: "og:title", content: "Nathália Parteka · Nail Art" },
       { property: "og:description", content: "Seu próximo momento de cuidado começa aqui." },
+      {
+        property: "og:image",
+        content: "https://www.nathaliaparteka.com.br/nathalia-avatar.jpeg",
+      },
+      { property: "og:image:alt", content: "Nathália Parteka" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      {
+        name: "twitter:image",
+        content: "https://www.nathaliaparteka.com.br/nathalia-avatar.jpeg",
+      },
       { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
