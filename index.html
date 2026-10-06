@@ -46,6 +46,12 @@
       scroll-behavior: smooth;
     }
 
+    aviso {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 20px;
+    }
+
     body {
       font-family: var(--sans);
       color: var(--ink);
@@ -1962,11 +1968,12 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 0 28px;
       border-top: 1px solid var(--line);
+      padding: 30px 35px;
     }
 
     .other-service-row {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       justify-content: space-between;
       gap: 18px;
       padding: 18px 0;
@@ -2490,10 +2497,10 @@
             <span class="value">R$65</span>
           </div>
         </div>
-
       </div>
     </article>
   </div>
+      <p class="aviso" style="font-family: 'Lora', serif; font-style: italic; font-size: 15px; padding: 38px; text-align: center;">* Pagamentos realizados no <strong style="text-decoration: underline; text-decoration-color: purple;">cartão de crédito ou débito</strong> será cobrado uma taxa adicional de R$10,00.</p>
 </section>
 
   <!-- COURSES SECTION -->
@@ -2603,8 +2610,7 @@
         </details>
         <details class="faq-item">
           <summary>Quais são as formas de pagamento?</summary>
-          <div class="faq-body">Pix, dinheiro e cartões de crédito/débito. Para pagamentos no cartão, é acrescentado uma
-            taxa de R$10,00.</div>
+          <div class="faq-body">Pix, dinheiro e cartões de crédito/débito. Para pagamentos no cartão, é acrescentado uma taxa de R$10,00.</div>
         </details>
       </div>
     </div>
